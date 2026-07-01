@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ELITE STRENGTH | Premium Performance Training</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-variant": "#353534",
+                        "on-primary-container": "#fff7f6",
+                        "outline-variant": "#5e3f3b",
+                        "on-secondary-fixed-variant": "#474646",
+                        "tertiary-container": "#de232a",
+                        "on-secondary-container": "#bab8b7",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-surface": "#e5e2e1",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#410003",
+                        "on-error-container": "#ffdad6",
+                        "outline": "#af8782",
+                        "surface-tint": "#ffb4aa",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary": "#c8c6c5",
+                        "on-background": "#e5e2e1",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "on-tertiary-fixed-variant": "#930010",
+                        "tertiary-fixed": "#ffdad6",
+                        "surface-container": "#201f1f",
+                        "secondary-container": "#4a4949",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface-variant": "#e9bcb6",
+                        "inverse-on-surface": "#313030",
+                        "on-tertiary-container": "#fff7f6",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#ffdad5",
+                        "on-primary-fixed": "#410001",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#313030",
+                        "surface-bright": "#3a3939",
+                        "inverse-primary": "#c0000c",
+                        "background": "#131313",
+                        "tertiary": "#ffb3ac",
+                        "on-surface": "#e5e2e1",
+                        "surface": "#131313",
+                        "on-primary-fixed-variant": "#930007",
+                        "surface-container-highest": "#353534",
+                        "tertiary-fixed-dim": "#ffb3ac",
+                        "on-tertiary": "#680008",
+                        "surface-dim": "#131313",
+                        "primary-container": "#e50914",
+                        "on-primary": "#690003",
+                        "primary": "#ffb4aa",
+                        "error-container": "#93000a"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "16px",
+                        full: "9999px"
+                    },
+                    spacing: {
+                        gutter: "24px",
+                        "container-max": "1440px",
+                        unit: "8px",
+                        "stack-sm": "16px",
+                        "stack-md": "32px",
+                        "stack-lg": "64px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "24px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Bebas Neue"],
+                        "display-lg": ["Bebas Neue"],
+                        "display-lg-mobile": ["Bebas Neue"],
+                        "headline-lg": ["Bebas Neue"],
+                        "label-caps": ["Sora"],
+                        "body-md": ["Inter"],
+                        "subheading-lg": ["Sora"],
+                        "subheading-sm": ["Sora"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "headline-md": ["32px", { lineHeight: "32px", letterSpacing: "0.05em", fontWeight: "400" }],
+                        "display-lg": ["96px", { lineHeight: "90px", letterSpacing: "0.02em", fontWeight: "700" }],
+                        "display-lg-mobile": ["56px", { lineHeight: "52px", letterSpacing: "0.02em", fontWeight: "700" }],
+                        "headline-lg": ["48px", { lineHeight: "48px", letterSpacing: "0.05em", fontWeight: "400" }],
+                        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "700" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "subheading-lg": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+                        "subheading-sm": ["16px", { lineHeight: "24px", fontWeight: "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #070707;
+            color: #e5e2e1;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(24, 24, 24, 0.4);
+            backdrop-filter: blur(24px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .crimson-gradient {
+            background: linear-gradient(45deg, #E50914, #FF3D3D);
+        }
+        .crimson-glow:hover {
+            box-shadow: 0 0 30px rgba(229, 9, 20, 0.3);
+        }
+        .glow-shadow {
+            box-shadow: 0 10px 30px -10px rgba(229, 9, 20, 0.3);
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #070707;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E50914;
+            border-radius: 10px;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .page-section {
+            display: none;
+            animation: fadeIn 0.5s ease-out;
+        }
+        .page-section.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .nav-link.active-nav {
+            color: #de232a;
+            font-weight: 700;
+            border-bottom: 2px solid #de232a;
+            padding-bottom: 4px;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .nav-link:hover {
+            color: #e5e2e1;
+            transform: scale(1.05);
+        }
+        .mobile-nav-link {
+            display: block;
+            padding: 12px 16px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #bab8b7;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .mobile-nav-link:hover,
+        .mobile-nav-link.active-mobile {
+            color: #de232a;
+            background: rgba(222, 35, 42, 0.05);
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, #E50914 0%, transparent 100%);
+        }
+        .counter {
+            font-feature-settings: "tnum";
+        }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: 200px;
+            gap: 16px;
+        }
+        .masonry-item-large {
+            grid-row: span 3;
+        }
+        .masonry-item-wide {
+            grid-column: span 2;
+        }
+        @media (max-width: 768px) {
+            .masonry-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: 180px;
+            }
+            .masonry-item-wide {
+                grid-column: span 1;
+            }
+            .masonry-item-large {
+                grid-row: span 2;
+            }
+        }
+        @media (max-width: 480px) {
+            .masonry-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+            .masonry-item-large {
+                grid-row: span 1;
+            }
+        }
+
+        /* Mobile nav */
+        #mobile-menu {
+            transition: all 0.3s ease;
+            transform: translateX(100%);
+        }
+        #mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Slider handle */
+        .slider-handle {
+            cursor: ew-resize;
+        }
+
+        /* Input styles */
+        .glass-input {
+            background: #070707;
+            border: 1px solid #181818;
+            transition: all 0.3s ease;
+        }
+        .glass-input:focus {
+            border-color: #E50914;
+            box-shadow: 0 0 10px rgba(229, 9, 20, 0.2);
+            outline: none;
+        }
+        .btn-gradient {
+            background: linear-gradient(45deg, #E50914, #FF3D3D);
+            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+        }
+        .btn-gradient:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+        }
+
+        .interest-btn {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .interest-btn:hover {
+            border-color: #de232a;
+        }
+        .interest-btn.active-interest {
+            border-color: #de232a;
+            background: rgba(222, 35, 42, 0.05);
+        }
+
+        /* Marquee */
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== TOP NAV ========== -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/40 backdrop-blur-3xl border-b border-white/10 shadow-2xl">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-5 max-w-container-max mx-auto">
+            <div class="font-display-lg text-display-lg-mobile md:text-headline-lg tracking-tighter text-on-surface cursor-pointer" onclick="navigateTo('home')">
+                ELITE STRENGTH
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex gap-8 items-center">
+                <span class="nav-link font-subheading-sm text-subheading-sm text-on-surface-variant" data-page="home" onclick="navigateTo('home')">Home</span>
+                <span class="nav-link font-subheading-sm text-subheading-sm text-on-surface-variant" data-page="about" onclick="navigateTo('about')">About</span>
+                <span class="nav-link font-subheading-sm text-subheading-sm text-on-surface-variant" data-page="programs" onclick="navigateTo('programs')">Programs</span>
+                <span class="nav-link font-subheading-sm text-subheading-sm text-on-surface-variant" data-page="trainers" onclick="navigateTo('trainers')">Trainers</span>
+                <span class="nav-link font-subheading-sm text-subheading-sm text-on-surface-variant" data-page="gallery" onclick="navigateTo('gallery')">Gallery</span>
+                <span class="nav-link font-subheading-sm text-subheading-sm text-on-surface-variant" data-page="blog" onclick="navigateTo('blog')">Blog</span>
+                <span class="nav-link font-subheading-sm text-subheading-sm text-on-surface-variant" data-page="contact" onclick="navigateTo('contact')">Contact</span>
+                <button class="crimson-gradient px-8 py-3 rounded-full font-label-caps text-label-caps text-white glow-shadow hover:scale-105 transition-transform duration-300" onclick="navigateTo('contact')">
+                    JOIN NOW
+                </button>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button class="md:hidden text-on-surface" onclick="toggleMobileMenu()">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-surface-container-lowest border-l border-white/10 shadow-2xl z-50 transform translate-x-full transition-transform duration-300 md:hidden">
+            <div class="flex justify-between items-center p-6 border-b border-white/10">
+                <span class="font-headline-md text-headline-md text-on-surface">ELITE</span>
+                <button onclick="toggleMobileMenu()" class="text-on-surface">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="p-4">
+                <span class="mobile-nav-link" data-page="home" onclick="navigateTo('home');toggleMobileMenu()">Home</span>
+                <span class="mobile-nav-link" data-page="about" onclick="navigateTo('about');toggleMobileMenu()">About</span>
+                <span class="mobile-nav-link" data-page="programs" onclick="navigateTo('programs');toggleMobileMenu()">Programs</span>
+                <span class="mobile-nav-link" data-page="trainers" onclick="navigateTo('trainers');toggleMobileMenu()">Trainers</span>
+                <span class="mobile-nav-link" data-page="gallery" onclick="navigateTo('gallery');toggleMobileMenu()">Gallery</span>
+                <span class="mobile-nav-link" data-page="blog" onclick="navigateTo('blog');toggleMobileMenu()">Blog</span>
+                <span class="mobile-nav-link" data-page="contact" onclick="navigateTo('contact');toggleMobileMenu()">Contact</span>
+            </div>
+            <div class="p-6 border-t border-white/10">
+                <button class="crimson-gradient w-full py-4 rounded-full font-label-caps text-label-caps text-white" onclick="navigateTo('contact');toggleMobileMenu()">
+                    JOIN NOW
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE: HOME ========== -->
+    <div id="page-home" class="page-section active pt-24">
+        <!-- Hero -->
+        <section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="w-full h-full bg-cover bg-center" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJZO9Hk3IId-BNjcaSwGFMMHq-P6su3Qb53QWvw1yG8V39q5ehZvK_I3o7uwbWDAluvU-F8W23vhLoQ7WTtJixKY5hK_fLLkAGNgKx-9BppbX1hF6Ni6zNUhyLo4g2b77DGeT_UXL5KB_H4tpU0ET0VX7xbrxEfy5uLy5tly1yZMFrYj50wEekE8sEcL-8hM2KrXur1818L2g7pT_QiSlFYAgrgS4gc_q2_DWaGAmOTx50QLuF50uOgA1J_dfB80OqSpKt-BawdrE')"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#070707] via-[#070707]/80 to-transparent"></div>
+            </div>
+            <div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="max-w-3xl reveal active">
+                    <span class="font-label-caps text-label-caps text-tertiary-container mb-4 block tracking-[0.3em]">BEYOND PHYSICAL LIMITS</span>
+                    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-none">DOMINATE YOUR <br /><span class="text-tertiary-container">EVOLUTION</span></h1>
+                    <p class="font-subheading-lg text-subheading-lg text-on-secondary-container mb-10 max-w-xl">Experience the ultimate fusion of elite athletic science and luxury performance. Your transformation is not an option; it's our mandate.</p>
+                    <div class="flex flex-wrap gap-6">
+                        <button class="crimson-gradient px-10 py-5 font-label-caps text-label-caps text-white crimson-glow transition-all" onclick="navigateTo('contact')">JOIN THE ELITE</button>
+                        <button class="border border-white/20 px-10 py-5 font-label-caps text-label-caps text-white hover:bg-white hover:text-black transition-all" onclick="navigateTo('contact')">BOOK FREE TRIAL</button>
+                    </div>
+                    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div><div class="font-display-lg text-headline-lg text-white tabular-nums">10K+</div><div class="font-label-caps text-[10px] text-on-secondary-container">MEMBERS ENROLLED</div></div>
+                        <div><div class="font-display-lg text-headline-lg text-white tabular-nums">50+</div><div class="font-label-caps text-[10px] text-on-secondary-container">EXPERT COACHES</div></div>
+                        <div><div class="font-display-lg text-headline-lg text-white tabular-nums">24/7</div><div class="font-label-caps text-[10px] text-on-secondary-container">ACCESS WORLDWIDE</div></div>
+                        <div><div class="font-display-lg text-headline-lg text-white tabular-nums">15+</div><div class="font-label-caps text-[10px] text-on-secondary-container">LUXURY LOCATIONS</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden xl:block absolute right-[10%] top-[30%] animate-float">
+                <div class="glass-card p-6 rounded-xl flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full crimson-gradient flex items-center justify-center"><span class="material-symbols-outlined text-white" style="font-variation-settings:'FILL'1;">workspace_premium</span></div>
+                    <div><div class="font-label-caps text-white">TOP RATED 2024</div><div class="text-xs text-on-secondary-container">Performance Excellence</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By -->
+        <section class="bg-surface-container-lowest py-16 overflow-hidden border-y border-white/5">
+            <div class="flex whitespace-nowrap animate-marquee">
+                <div class="flex gap-20 items-center mx-10 opacity-30 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                    <span class="font-display-lg text-headline-md text-white">NIKE</span>
+                    <span class="font-display-lg text-headline-md text-white">ADIDAS</span>
+                    <span class="font-display-lg text-headline-md text-white">GYMSHARK</span>
+                    <span class="font-display-lg text-headline-md text-white">UNDER ARMOUR</span>
+                    <span class="font-display-lg text-headline-md text-white">REEBOK</span>
+                    <span class="font-display-lg text-headline-md text-white">PUMA</span>
+                    <span class="font-display-lg text-headline-md text-white">NIKE</span>
+                    <span class="font-display-lg text-headline-md text-white">ADIDAS</span>
+                    <span class="font-display-lg text-headline-md text-white">GYMSHARK</span>
+                    <span class="font-display-lg text-headline-md text-white">UNDER ARMOUR</span>
+                    <span class="font-display-lg text-headline-md text-white">REEBOK</span>
+                    <span class="font-display-lg text-headline-md text-white">PUMA</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="text-center mb-20 reveal"><h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-4">ENGINEERED FOR <span class="text-tertiary-container">SUPERIORITY</span></h2><div class="w-24 h-1 bg-tertiary-container mx-auto"></div></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-10 group hover:border-tertiary-container/50 transition-all reveal"><span class="material-symbols-outlined text-tertiary-container text-5xl mb-6 block">fitness_center</span><h3 class="font-display-lg text-headline-md mb-4">ADVANCED EQUIPMENT</h3><p class="text-on-secondary-container font-body-md leading-relaxed">State-of-the-art biomechanical apparatus designed for peak muscular activation and safety.</p></div>
+                <div class="glass-card p-10 group hover:border-tertiary-container/50 transition-all reveal" style="transition-delay:100ms;"><span class="material-symbols-outlined text-tertiary-container text-5xl mb-6 block">sports_martial_arts</span><h3 class="font-display-lg text-headline-md mb-4">EXPERT COACHING</h3><p class="text-on-secondary-container font-body-md leading-relaxed">Olympic-level trainers providing personalized metabolic programming and technical oversight.</p></div>
+                <div class="glass-card p-10 group hover:border-tertiary-container/50 transition-all reveal" style="transition-delay:200ms;"><span class="material-symbols-outlined text-tertiary-container text-5xl mb-6 block">schedule</span><h3 class="font-display-lg text-headline-md mb-4">24/7 ELITE ACCESS</h3><p class="text-on-secondary-container font-body-md leading-relaxed">Unrestricted entry to all facilities globally, ensuring your momentum never stops.</p></div>
+            </div>
+        </section>
+
+        <!-- Featured Programs -->
+        <section class="py-stack-lg bg-surface-container-low">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="flex justify-between items-end mb-16 reveal"><h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg">ELITE <span class="text-tertiary-container">PROGRAMS</span></h2><span class="font-label-caps text-label-caps text-tertiary-container border-b border-tertiary-container pb-1 hover:text-white hover:border-white transition-all cursor-pointer" onclick="navigateTo('programs')">VIEW ALL TRACKS</span></div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+                    <div class="relative h-[600px] overflow-hidden group cursor-pointer reveal">
+                        <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAbK_gGPwoXki2mrlYHnUxO0G40eDjqps-1kHCBGG1IM0LgUmSHscZOdLQMLOOQHKOU7U-NMnAhNDiEbZthGK29GBoH2exERd7ZhG4Yb4faVE0RxeSM8cW0ReMjKNkYip134u6geuF0vQAgSmhubpiqLXtMXaAyeQyKfPIcZOAxYxOjyj__m3_pt7Hk_VfSmChZDrG_vE3zxUYwoWUwwb-2f-Se5WAPoeF2nrYuIokteNZG2McxBYIoilFZRR40R4eZx4Xrb9C46LM')"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-10 w-full transform translate-y-8 group-hover:translate-y-0 transition-transform">
+                            <span class="font-label-caps text-[10px] text-tertiary-container mb-2 block">STRENGTH ARCHITECTURE</span>
+                            <h4 class="font-display-lg text-headline-lg text-white mb-4">WEIGHT TRAINING</h4>
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500"><p class="text-white/70 mb-6">Build foundational power and aesthetic symmetry through scientific hypertrophy protocols.</p><span class="text-white font-label-caps flex items-center gap-2">EXPLORE PROGRAM <span class="material-symbols-outlined">arrow_forward</span></span></div>
+                        </div>
+                    </div>
+                    <div class="relative h-[600px] overflow-hidden group cursor-pointer reveal" style="transition-delay:100ms;">
+                        <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZUXpxA0AmZXsC_n5FeC1IIbcngmy9lwaxlL1pOrMzhPyolhvO3Es3MkiBZ_-SkudUjrhKnmyQmWJtPp67JC1MeVaVC7SYXn1FoAZkUlJx6JFRGizI0YKQ3n4uRBUo-VcUKw8o04K7sxlkcwqvQOQsTF8OXgXwNifR9mnYOGkGMkuq-1XUZhhbNKcIsrJOeC-VK-W4vHdOuiBUhPFYSLozd7EKkn6jjBtI6jv-NwlV1Qht_ESqhjJ_G5NvbDcTboghm1BideMcPtE')"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-10 w-full transform translate-y-8 group-hover:translate-y-0 transition-transform">
+                            <span class="font-label-caps text-[10px] text-tertiary-container mb-2 block">METABOLIC ACCELERATION</span>
+                            <h4 class="font-display-lg text-headline-lg text-white mb-4">FAT LOSS</h4>
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500"><p class="text-white/70 mb-6">Incinerate adipose tissue while preserving lean mass with high-intensity interval metrics.</p><span class="text-white font-label-caps flex items-center gap-2">EXPLORE PROGRAM <span class="material-symbols-outlined">arrow_forward</span></span></div>
+                        </div>
+                    </div>
+                    <div class="relative h-[600px] overflow-hidden group cursor-pointer reveal" style="transition-delay:200ms;">
+                        <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCP7-7nxstAGUAIQZnZbYIKoulceddM5c4RzQeN-N2sWJLj8_d6IPul3uRsJKrJ4S0Dt_4SUMSyXwjQ9BCPJyEPgpvACzwrKuWU4KrUonqFhw8KQr_XuJ1WaaQEnJClBeanrrfxEMPxkEOciyVlkoOEh7YJvyjDWo7V3Uv8Vtq9kx4_nCkJq_XcdFn_xCJbwpEw-3zo_Uu3WCv6NJwwf6cudjiaS4fHVOU3E1Ag5jqgKrNzqepPd8D0yROY8HFKvU1Ho_yoyLfMagY')"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-10 w-full transform translate-y-8 group-hover:translate-y-0 transition-transform">
+                            <span class="font-label-caps text-[10px] text-tertiary-container mb-2 block">FUNCTIONAL DOMINANCE</span>
+                            <h4 class="font-display-lg text-headline-lg text-white mb-4">CROSSFIT</h4>
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500"><p class="text-white/70 mb-6">Forge uncompromising conditioning and versatile strength through varied high-output movements.</p><span class="text-white font-label-caps flex items-center gap-2">EXPLORE PROGRAM <span class="material-symbols-outlined">arrow_forward</span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transformation Slider -->
+        <section class="py-stack-lg bg-surface overflow-hidden">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="reveal">
+                    <span class="font-label-caps text-label-caps text-tertiary-container mb-4 block">EVIDENCE OF EXCELLENCE</span>
+                    <h2 class="font-display-lg text-headline-lg mb-8">RESULTS REIMAGINED</h2>
+                    <p class="text-on-secondary-container font-body-lg mb-10">We don't just promise change; we engineer it. View the quantified evolutions of our elite roster.</p>
+                    <div class="grid grid-cols-2 gap-8 mb-10">
+                        <div class="glass-card p-6"><div class="font-display-lg text-headline-md text-white">-12%</div><div class="font-label-caps text-[10px] text-tertiary-container">AVG. BODY FAT DROP</div></div>
+                        <div class="glass-card p-6"><div class="font-display-lg text-headline-md text-white">+40%</div><div class="font-label-caps text-[10px] text-tertiary-container">AVG. STRENGTH GAIN</div></div>
+                    </div>
+                </div>
+                <div class="relative aspect-square reveal group">
+                    <div class="absolute inset-0 w-full h-full overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqMy24wpgM60f6ffCAWpoUbDFnArvjpJfrZ73g0mny5GZrbpNnM4jqQ5D7F9KGFWv0QfnFKZq06tnyhG85-UUMDqoFEFMwBR09mytDE8gGrvGC4hVcOBnceLMQHFNV8oElFl_Xwzu-fsVrceNIYBcY6Ffsn0M-KlcWLw6xMjhKP3CINZusfVHstjrrIUY7roGxrAiWwtgJyFvW5wjbyGN7SRpEcfTLwXyHfAwpSbWrE6DV-jzqZFR_eUx8I1mPdA3KhXT9FQwOJ7Q')"></div>
+                        <div class="absolute inset-0 w-[50%] h-full overflow-hidden border-r-2 border-tertiary-container z-10" id="before-image-home">
+                            <div class="absolute inset-0 w-[200%] h-full bg-cover bg-center grayscale brightness-50" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuClHomHhu4s6u5pmMkzHkV6_WFYM-rxcH6FTff2itHz0BPwfkXMXMCVtJ1GjGwNxs9B9ZeTQkFeayU9vuolcjDCV1SGW6jOP4lEhOfnzbcZC-x2R7dhBTgwsbCI9blkAysDtowkWHgwYqyY09VlK9Qpx0UXENPt2oB8eVhepHJqqCmP5L2aYAwBgiPdZuX59tCAok9yQl53XirhaawSBP7IepY1E2_xGjGhJY0WF_uhem1l3nd3KWt7NLZCKeAhkG_MmWlbz6SveqY')"></div>
+                        </div>
+                        <div class="absolute top-0 bottom-0 left-[50%] w-0.5 bg-tertiary-container z-20 cursor-ew-resize slider-handle" id="slider-handle-home">
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 crimson-gradient rounded-full flex items-center justify-center shadow-xl"><span class="material-symbols-outlined text-white text-sm">unfold_more</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trainers Preview -->
+        <section class="py-stack-lg bg-surface-container-lowest">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="text-center mb-20 reveal"><h2 class="font-display-lg text-headline-lg">THE <span class="text-tertiary-container">ELITE</span> ROSTER</h2><p class="text-on-secondary-container mt-4">Commanded by industry titans and world-class athletes.</p></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group reveal"><div class="relative aspect-[3/4] overflow-hidden mb-6"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJzCK3-bJ3kCMX9amDRHB3Zq16A48a7J2S6giIbNHuFkxfbVgaDYbGOak0GGDlyYYebTjCylLCF9Tmmi2aG2-inemJ0L2A2LfH8IF3G7J-TgIhD8v7JIuAy5LzmQJ4F1r7FHoIKQ27xnQZU5BWf-bs1eF7QIYxEkMshTRtOPjpMLAqlW9_wFjDylmyx8lRPUxS95-C3ejmlgQYp4XndJwezdtCF4nTsAsORt0O4BvkmTmklqS_q4Ty0H4LJl9rZXQpt9_i0hvQ8yE')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div></div><div class="font-display-lg text-headline-md text-white group-hover:text-tertiary-container transition-colors">MARCUS VANCE</div><div class="font-label-caps text-[10px] text-tertiary-container">HEAD OF PERFORMANCE</div></div>
+                    <div class="group reveal" style="transition-delay:100ms;"><div class="relative aspect-[3/4] overflow-hidden mb-6"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuByVWIgobMv25GxEfuoZGCNtSL00L747cNfvBuNkdhw_SsYk9pSo4ibYIoJNYpX2jimLsOFY1oSKpRoO6rNdWp5JxVFqnySQKTtaNWf92xOntmTGbZZvBhBJ4uDVDWF7prtdfo_37kI5W5U-4ZGMPruwau7ZCPKPNurW51va41dy8NOBHPz7keYSZ5jde4oGf1SnZbE3XEXVj4iqsl-EADY9O_Qlg57_cxoH0ubAu1z1fMuwU-TonbYEeAK9AMBoeXkoU4Nq3NWs2M')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div></div><div class="font-display-lg text-headline-md text-white group-hover:text-tertiary-container transition-colors">ELARA JADE</div><div class="font-label-caps text-[10px] text-tertiary-container">METABOLIC SPECIALIST</div></div>
+                    <div class="group reveal" style="transition-delay:200ms;"><div class="relative aspect-[3/4] overflow-hidden mb-6"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQlb12c_IjkU9dssGSxs7PPOLCYcQQ75S9JCWBWuc3KlXohnN_aihCQhyhWHzCm0Sgpj3Stw57BDSbMIpuX52mG8QC_nQ2IVXvWx9KRpA2iwj33IfUdpMPsiImjrdtNwn7g6G7MTRfjzNYSaOMboD72fL1ehtoc4gga2Dtx4ckPjvuJe3iSFh29sycBCGPUrU06gpBMPZhRJADX-NtF3vv3agNF3jQTyfmp0yj2KM6lWoDykYiF2dYfric60QVZfRw9YNcpVmumdY')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div></div><div class="font-display-lg text-headline-md text-white group-hover:text-tertiary-container transition-colors">KANE THORNE</div><div class="font-label-caps text-[10px] text-tertiary-container">STRENGTH &amp; CONDITIONING</div></div>
+                    <div class="group reveal" style="transition-delay:300ms;"><div class="relative aspect-[3/4] overflow-hidden mb-6"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAoQGDQ92FXIcPbtdQXfV3--GWriIWn_xeJjHDoaLIVGYZLQVw6KOgJDIYulhMKPSfDkxqh5qvRwDramvtUy7S3kpOL33V0qlA_Oc7FjI96IydvH2ldnzdnddnNVykqvxum1QoKrnNGFLUBjvcBpAof_9__6Tj9cg56CNcOrCZfB9V-bMpgXdqWtvd2Kzr6LFOoaiWrEN8ANeqc36FZzJ2VIz9uVPG2fIjQf6THJrzT1yzPnGpLRLfnyLw0yG8AyBW1I9qqBpY9HJY')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div></div><div class="font-display-lg text-headline-md text-white group-hover:text-tertiary-container transition-colors">SARAH LYNNE</div><div class="font-label-caps text-[10px] text-tertiary-container">RECOVERY &amp; MOBILITY</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BMI & Schedule -->
+        <section class="py-stack-lg bg-background">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="glass-card p-10 reveal">
+                    <h3 class="font-display-lg text-headline-lg mb-6">BODY METRICS</h3>
+                    <p class="text-on-secondary-container mb-10">Calculate your Body Mass Index as a baseline for your custom evolution protocol.</p>
+                    <div class="space-y-6">
+                        <div><label class="font-label-caps text-[10px] text-white/50 mb-2 block">WEIGHT (KG)</label><input class="w-full bg-[#070707] border border-[#181818] p-4 text-white focus:border-tertiary-container focus:ring-0 transition-all outline-none" placeholder="70" type="number" id="bmi-weight" /></div>
+                        <div><label class="font-label-caps text-[10px] text-white/50 mb-2 block">HEIGHT (CM)</label><input class="w-full bg-[#070707] border border-[#181818] p-4 text-white focus:border-tertiary-container focus:ring-0 transition-all outline-none" placeholder="180" type="number" id="bmi-height" /></div>
+                        <button class="w-full crimson-gradient py-4 font-label-caps text-white" onclick="calculateBMI()">CALCULATE NOW</button>
+                        <div class="mt-8 p-6 bg-surface-container-high rounded-lg hidden" id="bmi-result">
+                            <div class="flex justify-between items-center"><span class="font-label-caps text-white/70">YOUR BMI</span><span class="font-display-lg text-headline-md text-tertiary-container" id="bmi-value">24.2</span></div>
+                            <div class="text-xs text-on-secondary-container mt-2" id="bmi-status">STATUS: HEALTHY WEIGHT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal" style="transition-delay:100ms;">
+                    <h3 class="font-display-lg text-headline-lg mb-6">TODAY'S <span class="text-tertiary-container">SQUAD</span></h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-6 bg-surface-container-low border-l-4 border-tertiary-container"><div><div class="font-label-caps text-white">POWER LIFTING</div><div class="text-xs text-on-secondary-container">MARCUS V. • 08:00 AM</div></div><span class="material-symbols-outlined text-tertiary-container">timer</span></div>
+                        <div class="flex items-center justify-between p-6 bg-surface-container-low border-l-4 border-transparent hover:border-white transition-all"><div><div class="font-label-caps text-white">METABOLIC BURN</div><div class="text-xs text-on-secondary-container">ELARA J. • 10:30 AM</div></div><span class="material-symbols-outlined text-white/30">timer</span></div>
+                        <div class="flex items-center justify-between p-6 bg-surface-container-low border-l-4 border-transparent hover:border-white transition-all"><div><div class="font-label-caps text-white">STRENGTH ARCHITECTURE</div><div class="text-xs text-on-secondary-container">KANE T. • 05:00 PM</div></div><span class="material-symbols-outlined text-white/30">timer</span></div>
+                        <div class="flex items-center justify-between p-6 bg-surface-container-low border-l-4 border-transparent hover:border-white transition-all"><div><div class="font-label-caps text-white">RECOVERY SESSION</div><div class="text-xs text-on-secondary-container">SARAH L. • 07:00 PM</div></div><span class="material-symbols-outlined text-white/30">timer</span></div>
+                    </div>
+                    <button class="mt-8 font-label-caps text-label-caps text-tertiary-container border-b border-tertiary-container" onclick="navigateTo('programs')">VIEW FULL WEEKLY SCHEDULE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-stack-lg bg-surface-container-lowest">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <h2 class="font-display-lg text-headline-lg text-center mb-20">ELITE <span class="text-tertiary-container">VOICES</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="glass-card p-10 reveal"><div class="flex gap-1 text-tertiary-container mb-6"><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span></div><p class="font-body-lg italic text-white/80 mb-8">"The precision of their coaching and the luxury of the facility is unmatched. I've never achieved results like this anywhere else."</p><div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-surface-variant"></div><div><div class="font-label-caps text-white">ALEX RIVERA</div><div class="text-[10px] text-tertiary-container">CEO, NEXUS TECH</div></div></div></div>
+                    <div class="glass-card p-10 reveal" style="transition-delay:100ms;"><div class="flex gap-1 text-tertiary-container mb-6"><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span></div><p class="font-body-lg italic text-white/80 mb-8">"This isn't just a gym; it's a high-performance community. The trainers understand biomechanics at an Olympic level."</p><div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-surface-variant"></div><div><div class="font-label-caps text-white">DR. HELENA VOSS</div><div class="text-[10px] text-tertiary-container">ORTHOPEDIC SURGEON</div></div></div></div>
+                    <div class="glass-card p-10 reveal" style="transition-delay:200ms;"><div class="flex gap-1 text-tertiary-container mb-6"><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL'1;">star</span></div><p class="font-body-lg italic text-white/80 mb-8">"Elite Strength changed my definition of training. The environment breeds momentum and discipline."</p><div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-surface-variant"></div><div><div class="font-label-caps text-white">JULIAN COSTA</div><div class="text-[10px] text-tertiary-container">PRO ATHLETE</div></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="relative py-32 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="w-full h-full bg-cover bg-center" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbH_9iwOAupOjWoNWp0ByIVs9jY9MWAiYnUtKW7U7lkOf67q1Io2Mp9CCvVF1mJbRpASzlMHiLsk7Q9XN3mCNFEnp6JdcHjzwLuJH1xfBFAKJcp50X2-Sev8tfMrQRHzS22MHkHYRnywAbtwqO6hwiS_yCWnECpk88XkpNyUw-6yWAVitxSxefxheElKRDdly-YIBCThar7TnAD2hQ37lkeyotk6Tjp_eAY1ge73zU9pYbsMQE-9yE341VBIDr3N08kbCw7pfzbuw')"></div>
+                <div class="absolute inset-0 bg-black/80"></div>
+            </div>
+            <div class="relative z-10 text-center px-margin-mobile reveal">
+                <h2 class="font-display-lg text-display-lg-mobile md:text-[140px] leading-none mb-8">REACH YOUR <span class="text-tertiary-container">PEAK</span></h2>
+                <p class="font-subheading-lg text-white/70 max-w-2xl mx-auto mb-12">The world doesn't wait for your potential. Stop negotiating with yourself and claim your evolution today.</p>
+                <button class="crimson-gradient px-16 py-6 font-label-caps text-headline-md text-white rounded-none hover:scale-110 transition-transform shadow-[0_0_50px_rgba(229,9,20,0.5)]" onclick="navigateTo('contact')">START YOUR TRANSFORMATION</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== PAGE: ABOUT ========== -->
+    <div id="page-about" class="page-section pt-24">
+        <!-- Hero Banner -->
+        <header class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent"></div>
+            <div class="relative z-10 text-center px-margin-mobile reveal"><h1 class="font-display-lg text-display-lg-mobile md:text-display-lg tracking-tight uppercase">Our Legacy</h1><p class="font-subheading-lg text-subheading-lg text-on-secondary-container mt-4 max-w-2xl mx-auto">Founded on the relentless pursuit of peak human performance and unyielding discipline.</p></div>
+            <div class="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat grayscale opacity-30" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNDXNaOMeMJmSrMDZZQT2rkuSoR5q-zrRS_1NsfSdsc1fZK32Z0Op9TBsf4Pn8w682oDCYQ6HJR01Kr-k1N9fCAYDwcxdt9D53qoKL3To_dfND1FX4NlE-KKXhaPUK9X2s76GRNE6t-t8BBSXgxmmNg4fciV-fK_g0bw2f91sD9OGSU2ZQ2JR9s-yqTzw8yx5Lw8S_jw2r-3L3M2ckLX0zrjOGygOftqu_UPUDKRGQ-5UkxbJhi-dUFHqSdDyQZKr7NTK9AEvzN0c')"></div>
+        </header>
+
+        <!-- Our Story -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+                <div class="reveal"><span class="font-label-caps text-label-caps text-tertiary-container mb-4 block">THE GENESIS</span><h2 class="font-headline-lg text-headline-lg mb-8">BUILT FROM THE IRON UP</h2><div class="space-y-6 font-body-lg text-body-lg text-on-secondary-container"><p>Elite Strength began in 2012 as a private collective of high-performance athletes who demanded more than commercial gyms could offer. We didn't just build a gym; we forged a sanctuary for those who view struggle as a privilege.</p><p>Every piece of equipment was hand-selected for precision, and every coach was vetted for a decade of results. Today, we stand as the premier destination for individuals who refuse to accept mediocrity.</p></div></div>
+                <div class="relative group reveal"><div class="absolute -inset-4 border border-tertiary-container/30 rounded-xl group-hover:inset-0 transition-all duration-500"></div><div class="aspect-square bg-cover bg-center rounded-xl relative z-10" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3-ciQQjI1wr8QYdHEeJ0WYWtXsYiTgJVRkbmCmPG4P0WbP4n0sl5TMrVakLS_3BDxiNg13MjgmIifQ3TKjk1cZ1NJciP1iEBlUtdk_6BmA68ZEz0K9MbkYQIyZNPzx-IKrXX5hmlNhtQezdQw4p7L2hSUHeMMW0Gc2IWcACqPGCqyDSHUeZeI8H2BxSLki8rwmXvHvJPv_seGSB_w32TKJtd-k6tF-hjIUSqvA3ntybPu0tM5Ey-fuEB7qZPZ7IB_Lw9zM3JRehM')"></div></div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="bg-surface-container-lowest py-stack-lg border-y border-white/5">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center reveal">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+                    <div class="p-8"><h3 class="font-headline-md text-headline-md text-tertiary-container mb-6">MISSION</h3><p class="font-display-lg text-[40px] md:text-[64px] leading-tight text-white uppercase font-bold">To architect the world's most <span class="text-tertiary-container">dominant</span> human spirits.</p></div>
+                    <div class="p-8 border-l border-white/10"><h3 class="font-headline-md text-headline-md text-tertiary-container mb-6">VISION</h3><p class="font-display-lg text-[40px] md:text-[64px] leading-tight text-white uppercase font-bold">Setting the global <span class="text-tertiary-container">benchmark</span> for elite performance.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="text-center mb-stack-md reveal"><h2 class="font-headline-lg text-headline-lg">OUR GUIDING PRINCIPLES</h2></div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+                <div class="glass-card p-8 rounded-xl reveal hover:scale-[1.02] transition-transform"><span class="material-symbols-outlined text-tertiary-container text-4xl mb-6">shield_with_heart</span><h4 class="font-subheading-lg text-subheading-lg mb-4">INTEGRITY</h4><p class="text-on-secondary-container">We do the work when no one is watching. Our standards are non-negotiable.</p></div>
+                <div class="glass-card p-8 rounded-xl reveal hover:scale-[1.02] transition-transform" style="transition-delay:100ms;"><span class="material-symbols-outlined text-tertiary-container text-4xl mb-6">bolt</span><h4 class="font-subheading-lg text-subheading-lg mb-4">MOMENTUM</h4><p class="text-on-secondary-container">Progress is the only objective. We celebrate wins, then we move the goalposts.</p></div>
+                <div class="glass-card p-8 rounded-xl reveal hover:scale-[1.02] transition-transform" style="transition-delay:200ms;"><span class="material-symbols-outlined text-tertiary-container text-4xl mb-6">precision_manufacturing</span><h4 class="font-subheading-lg text-subheading-lg mb-4">PRECISION</h4><p class="text-on-secondary-container">Data-driven training. Science-backed recovery. No guesswork, just results.</p></div>
+                <div class="glass-card p-8 rounded-xl reveal hover:scale-[1.02] transition-transform" style="transition-delay:300ms;"><span class="material-symbols-outlined text-tertiary-container text-4xl mb-6">diversity_3</span><h4 class="font-subheading-lg text-subheading-lg mb-4">KINDRED</h4><p class="text-on-secondary-container">A community of high-performers who push each other to the absolute limit.</p></div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="py-stack-lg bg-surface-container-low overflow-hidden">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative">
+                <h2 class="font-headline-lg text-headline-lg mb-stack-md text-center reveal">THE EVOLUTION</h2>
+                <div class="absolute left-1/2 top-32 bottom-0 w-1 timeline-line -translate-x-1/2 hidden md:block"></div>
+                <div class="space-y-stack-md relative">
+                    <div class="flex flex-col md:flex-row items-center w-full reveal"><div class="md:w-1/2 md:pr-12 text-right hidden md:block"><h4 class="font-headline-md text-headline-md text-tertiary-container">2012</h4><p class="font-subheading-lg text-subheading-lg">THE UNDERGROUND ERA</p></div><div class="w-8 h-8 rounded-full crimson-gradient z-10 border-4 border-surface shadow-[0_0_20px_#E50914]"></div><div class="md:w-1/2 md:pl-12 mt-4 md:mt-0 text-center md:text-left"><div class="md:hidden"><h4 class="font-headline-md text-headline-md text-tertiary-container">2012</h4><p class="font-subheading-lg text-subheading-lg">THE UNDERGROUND ERA</p></div><p class="text-on-secondary-container max-w-sm">Founded in a 1,000 sq ft warehouse. Only 20 members allowed. By invitation only.</p></div></div>
+                    <div class="flex flex-col md:flex-row items-center w-full reveal"><div class="md:w-1/2 md:pr-12 text-right order-2 md:order-1 mt-4 md:mt-0 text-center md:text-right"><div class="md:hidden"><h4 class="font-headline-md text-headline-md text-tertiary-container">2016</h4><p class="font-subheading-lg text-subheading-lg">URBAN EXPANSION</p></div><p class="text-on-secondary-container max-w-sm ml-auto">Opened our first flagship facility. Introduced the 'Elite Protocol' methodology.</p></div><div class="w-8 h-8 rounded-full bg-surface-variant z-10 border-4 border-surface order-1 md:order-2"></div><div class="md:w-1/2 md:pl-12 text-left hidden md:block order-3"><h4 class="font-headline-md text-headline-md text-tertiary-container">2016</h4><p class="font-subheading-lg text-subheading-lg">URBAN EXPANSION</p></div></div>
+                    <div class="flex flex-col md:flex-row items-center w-full reveal"><div class="md:w-1/2 md:pr-12 text-right hidden md:block"><h4 class="font-headline-md text-headline-md text-tertiary-container">2020</h4><p class="font-subheading-lg text-subheading-lg">THE GLOBAL HUB</p></div><div class="w-8 h-8 rounded-full bg-surface-variant z-10 border-4 border-surface"></div><div class="md:w-1/2 md:pl-12 mt-4 md:mt-0 text-center md:text-left"><div class="md:hidden"><h4 class="font-headline-md text-headline-md text-tertiary-container">2020</h4><p class="font-subheading-lg text-subheading-lg">THE GLOBAL HUB</p></div><p class="text-on-secondary-container max-w-sm">Voted 'Best Private Performance Facility' globally. Digital platform launched.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="py-stack-md bg-tertiary-container text-white overflow-hidden">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-gutter text-center reveal">
+                <div><div class="font-display-lg text-headline-lg md:text-display-lg mb-2 counter" data-target="15">0</div><div class="font-label-caps text-label-caps opacity-80 uppercase">World Records</div></div>
+                <div><div class="font-display-lg text-headline-lg md:text-display-lg mb-2 counter" data-target="500">0</div><div class="font-label-caps text-label-caps opacity-80 uppercase">Elite Athletes</div></div>
+                <div><div class="font-display-lg text-headline-lg md:text-display-lg mb-2 counter" data-target="12">0</div><div class="font-label-caps text-label-caps opacity-80 uppercase">Pro Certifications</div></div>
+                <div><div class="font-display-lg text-headline-lg md:text-display-lg mb-2 counter" data-target="100">0</div><div class="font-label-caps text-label-caps opacity-80 uppercase">Success Rate (%)</div></div>
+            </div>
+        </section>
+
+        <!-- Coaches -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="flex justify-between items-end mb-stack-md reveal"><div><span class="font-label-caps text-label-caps text-tertiary-container mb-2 block">THE ARCHITECTS</span><h2 class="font-headline-lg text-headline-lg">MEET THE MASTERS</h2></div><span class="hidden md:block font-subheading-sm text-subheading-sm text-on-surface hover:text-tertiary-container transition-colors cursor-pointer" onclick="navigateTo('trainers')">VIEW ALL TRAINERS →</span></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <div class="group relative overflow-hidden rounded-xl reveal"><div class="aspect-[4/5] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAm0h2t8hEqiVu4iKcePll-BzrgiWRd6HoqPyvkFYzUxBWj99NWySwwnwh2pNH2u1MrFWJc_40zgk4i_Tnbg6IGgpvR9IzcDEvrtNiZBPghCvSVHpeZU4Sjin7E2xxtTbs_-0iQItitK12YbEAExoBnQPSp4XlKrVwumiSL_muogokGeZj08-eELFaUSEUNVSRFfyfWtTp0YvS89mNNS9QqyjSs8yVS_OwTMKI54oFR7XD090Zgt5Kqb2YgV-3RyJRAn2UsLQ7Gnn8')"></div><div class="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent opacity-90"></div><div class="absolute bottom-0 left-0 p-8"><h5 class="font-headline-md text-headline-md text-white mb-1">Marcus Vane</h5><p class="font-label-caps text-label-caps text-tertiary-container mb-4">Director of Performance</p><p class="text-on-secondary-container text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 max-w-[200px]">15 years experience training Olympic lifters and pro athletes.</p></div></div>
+                <div class="group relative overflow-hidden rounded-xl reveal" style="transition-delay:150ms;"><div class="aspect-[4/5] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLGTphZBqzUj2RSUU_RO2_yElS3pNnk3A_0fYyNyAYmt2hE9IOEmQJhguuLZLKl-MHhX3Fq7Bg1WZcMQHOq7MV0epIvnnlKxR_lEuHbrU1pY65BfXqdI9PH91TnZjk4dbS7CeJiNXj6AntDK-pmwbMjFkmWeI4uNtBQQQ6XpLcjla5uYQGiW3rc2AubE_O-ivb6xcQwCXb3gHs0vT8c5IjZs-YgC61Q_2t27Aw7fFUr4WxO-DEx6mctjORwzF11-36SVzu0xnfjWY')"></div><div class="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent opacity-90"></div><div class="absolute bottom-0 left-0 p-8"><h5 class="font-headline-md text-headline-md text-white mb-1">Elena Rossi</h5><p class="font-label-caps text-label-caps text-tertiary-container mb-4">Head of Biomechanics</p><p class="text-on-secondary-container text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 max-w-[200px]">Specializes in movement efficiency and injury prevention for high-output individuals.</p></div></div>
+                <div class="group relative overflow-hidden rounded-xl reveal" style="transition-delay:300ms;"><div class="aspect-[4/5] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHxa5FMhSeTE650xULDrayJqJENbT9AFlns9-UoBxur9OdEwwDi4o0r1Kpy_D0c0k8r5DE3DjyDG64x9nGNkGwPuf7HuCshCRYkBVZRpF3xHUzV_fa6Fvd0X2a03gMhm30PB7T5DCanVQlZpNaE407-hM2PibCwk_r4rOYUEfxQs-UuU_3gAPOKr6vwCwNBjH37ooenkC3oxNL1ahlSCx9iN4_QGQP_jNuFc2fG5NKDqVQ4188wtHgrD7PhqOgwM_YRGpu7Ct63ns')"></div><div class="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent opacity-90"></div><div class="absolute bottom-0 left-0 p-8"><h5 class="font-headline-md text-headline-md text-white mb-1">Jaxson Thorne</h5><p class="font-label-caps text-label-caps text-tertiary-container mb-4">Master of Strength</p><p class="text-on-secondary-container text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 max-w-[200px]">Ex-Special Forces physical instructor with a focus on mental and physical fortitude.</p></div></div>
+            </div>
+        </section>
+
+        <!-- Facilities -->
+        <section class="py-stack-lg bg-surface-container-lowest">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <h2 class="font-headline-lg text-headline-lg mb-stack-md text-center reveal">THE SANCTUARY</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] reveal">
+                    <div class="row-span-2 col-span-2 bg-cover bg-center rounded-xl" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC59_7tZ7PjMYOqyi-_NTL8QxPBWyjlgwRr5t-QBXY3hO015y-rg-yhSH0eN2kmKPQKAsVCpTXJ1Nf9O7sQwVpClznj_eMEvlWH_SlqSnBzvYq505RUlUUxhUdefbTXqCkN7m3Mk4G__Ov_1iAbW3DgpI7eKLHnwNsTP9H_uAFOis-7ZsgIWYWch87BVLxupDZj9RcJMuWYcwzS5SHRnZ8xFQ2uUNVzQbAxJquddNeODI7Ad1uTKdMyPpS4iCSozbdTAvyzkzjSFTM')"></div>
+                    <div class="row-span-1 bg-cover bg-center rounded-xl" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjnfYB7MS1JwPf09deL0eYQMPX_BswrdaAk-AJewf2QBqFiwKWoTku24hJ3DaeeP3bvtJOIYeTYx7whS_xXw7qJV3-kzHLfNgV7kyEQ41g0LjIEQuglQ24b0DFKUvHnUHn87tIUFtUG1JABabGdEi1WXFOOZiOSAtghPBNNRLizbgl1Zc8npz_X7d7y2vFP_BBe3fpuUp_07itJhjLNynUb-zd4XktzhEfl0Dj5xcv06L54osG6Z6GBWdSuT4E8pxOZBcaBlc6KSc')"></div>
+                    <div class="row-span-2 bg-cover bg-center rounded-xl" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHu4PhbyibB1LPb0AgTDxK14kjVzQ2Oa7PTmURg5jqCljQ-UXgqqKtkB1QL3AZzEpr43jolcMm5LaBRzZ5Bo5_wNzWWjPb98U7I4zwWDW5cqaMDvHZPSLJIzVmWDO3ImijiVf5il-YfssqgRtIIopiljx8mc37OIuu0WDP4mpMVyi3KiUAXURmQeZvjAqgqp0jbjv-O3uQfWiShe4XBax5B6P4gPQcNOGdDSKJ7ZRu-YWQeKi7pIiQa7YKN3d6ZxXx8MamofHeHbY')"></div>
+                    <div class="row-span-1 bg-cover bg-center rounded-xl" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1aGczjoEPWrROFGb4v66glgH876Tw3ZZBo29O0ntGz9FaT7AuVqYqP3pkeMYKA_YeJv5qS7mG5mUuWx9Yl3oUrT62GdA6Ea_x--W8-Alo5vYpciiQKi5G900ICEJrrnb_G-VAsSE2pWeQSVt1MCeKeORXD7ui28jPsYNqg0PSzDV4BYl1AMRuxBJ_yVw2Jzhq9aevhqqZ7uQW5YG1KHPmGpc1JOUJX6VXjthfvBqheWDt877FltmM1f15zWenO0v8DwTbrjBk4aY')"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Members Love -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="max-w-4xl mx-auto reveal">
+                <h2 class="font-headline-lg text-headline-lg mb-12 text-center">THE ELITE DIFFERENCE</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6 items-start pb-8 border-b border-white/10"><div class="bg-tertiary-container/10 p-4 rounded-lg"><span class="material-symbols-outlined text-tertiary-container">lock</span></div><div><h4 class="font-subheading-lg text-subheading-lg mb-2">ABSOLUTE PRIVACY</h4><p class="text-on-secondary-container">Limited membership ensures you never wait for equipment and your training remains undisturbed by crowds.</p></div></div>
+                    <div class="flex gap-6 items-start pb-8 border-b border-white/10"><div class="bg-tertiary-container/10 p-4 rounded-lg"><span class="material-symbols-outlined text-tertiary-container">analytics</span></div><div><h4 class="font-subheading-lg text-subheading-lg mb-2">BIOMETRIC TRACKING</h4><p class="text-on-secondary-container">Monthly VO2 max, body composition, and performance analysis included in every membership level.</p></div></div>
+                    <div class="flex gap-6 items-start"><div class="bg-tertiary-container/10 p-4 rounded-lg"><span class="material-symbols-outlined text-tertiary-container">restaurant</span></div><div><h4 class="font-subheading-lg text-subheading-lg mb-2">CUSTOM NUTRITION</h4><p class="text-on-secondary-container">In-house chefs and nutritionists coordinate with your trainers to fuel your specific goals.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="relative py-24 md:py-40 overflow-hidden">
+            <div class="absolute inset-0 bg-tertiary-container/10"></div>
+            <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center reveal">
+                <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 uppercase">AWAITING YOUR COMMAND</h2>
+                <p class="font-subheading-lg text-subheading-lg text-on-surface mb-12 max-w-2xl mx-auto">Admission is selective. The journey is rigorous. The result is undeniable.</p>
+                <button class="crimson-gradient px-12 py-5 rounded-full font-headline-md text-headline-md text-white crimson-glow hover:scale-105 transition-all" onclick="navigateTo('contact')">BECOME PART OF THE ELITE</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== PAGE: PROGRAMS ========== -->
+    <div id="page-programs" class="page-section pt-24">
+        <!-- Hero -->
+        <section class="relative h-[819px] flex items-center justify-center overflow-hidden px-margin-mobile md:px-margin-desktop">
+            <div class="absolute inset-0 z-0">
+                <div class="w-full h-full bg-cover bg-center brightness-[0.3]" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDa18kld09_At1-6seGHkVwbxTIZOtOZIJbR-rtBpJjBCJiV94HUpVk5fS1PJLXraSvgHLeUE1hM1qWIZaItZefz8ncw_ZyDnhts7MG_nZTwgEsbs-TRjtrihYucJ8gcQ6GUlc-trbiirj8vIHn8sysjiFS4rFXUzHyKCqmNbUls87A7C8SNHcCN1tkT00hWdWrr_AmXDYRWWni1wCSaQg0Kpq1hScbY2Z8iVQrdCGlsEId0IUHy1nJERF63O8eHqDTh7FShCt2fWE')"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent"></div>
+            </div>
+            <div class="relative z-10 text-center max-w-4xl">
+                <span class="font-label-caps text-label-caps text-tertiary-container tracking-[0.4em] block mb-4">ELITE LEVEL SELECTION</span>
+                <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase mb-6 leading-none">CHOOSE YOUR PATH</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Select a discipline engineered for your specific goals. From metabolic conditioning to raw strength, our programs are the gold standard for high-net-worth performance.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <button class="crimson-gradient h-14 px-10 rounded-lg font-label-caps text-label-caps text-white glow-shadow hover:scale-105 transition-all" onclick="document.getElementById('pricing-table').scrollIntoView({behavior:'smooth'})">VIEW PRICING</button>
+                    <button class="glass-card h-14 px-10 rounded-lg font-label-caps text-label-caps text-white border border-white/20 hover:bg-white/10 transition-all" onclick="navigateTo('contact')">TAKE ASSESSMENT</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Categories -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="mb-stack-md"><h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">OUR DISCIPLINES</h2><div class="h-1 w-24 bg-tertiary-container mt-2"></div></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative h-96 overflow-hidden rounded-xl cursor-pointer"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpq1wfGTPEs1kFJRfSKu4ph54JCBtdQMFDIs4YipeWdK8nGAexx5LajFY19yYNCFOmoH1HMLsI_Zkeygg6M36t4s07Wa-tF93VZRFVe23Q27qL4FxaN6qPMaj-A5VEhD1TtbRzqrzeucbZv4sRoTSQ-8bAcMcn_oeNoIUq24RPoE5c-RO33spgWQ7nvAphSr7ugsjDAwfouPgu9oxOTRojyRzjkcVdY2MXWjd80Rw2GuYq-mkI2RNfQ4ks037wBqUsy1gbjpFAh3Q')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div><div class="absolute bottom-0 p-8"><h3 class="font-headline-md text-headline-md uppercase">Weight Training</h3><p class="text-on-secondary-container mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body-md">Hypertrophy and raw power through science-backed protocols.</p></div></div>
+                <div class="group relative h-96 overflow-hidden rounded-xl cursor-pointer"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbzGOXNPHC8c8Viik4XWfkH2RN2lHGs6TAzSIAaMqB0dj36tTtTvUGgUHCF-Jwti0ex_D3seQXkRSFHy00gObSyFMHbcAuUTuQrN6fMkdbqIvIJQLERROw62K20P8UIP-AqAZCOSVzw2Upi_hgwr8SdZ_tfSc64c0HQD0p_ZRJqdizvXtteQcWFEI9dbl8m4EW1H-MNdnlzyHDOvqn_KAKqcj0RpdMDdq3ZztT6kO_M0AvyX5ZeMwG3_X_ENE80GzV4RylyD-5q7k')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div><div class="absolute bottom-0 p-8"><h3 class="font-headline-md text-headline-md uppercase">Metabolic Burn</h3><p class="text-on-secondary-container mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body-md">Shred body fat while maintaining lean muscle mass.</p></div></div>
+                <div class="group relative h-96 overflow-hidden rounded-xl cursor-pointer"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDraOKb8lsKx99syP8DCDuX0YEVhbeIpcUheY6-pE9TU3jY8s3DiowleKsVmVM4T2r_xikWEsll7dq-3oIPtKqh7uDBbfqnX2BFMT4_eppB1nEWbXt1nz_OlTmztW_cJzEEE2GbFl6gklItUXogJWaXbj2IUFIw1sVQtMOQz4dxn6HOIj8YVL2XSVGMm3QZbahsXcNYue-flarVYkHgdaUHAsEN0u_5kfTsikgp0-FTWHHkvdxWwPln3SyOYc9-LIqOktzlnCOf5XA')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div><div class="absolute bottom-0 p-8"><h3 class="font-headline-md text-headline-md uppercase">CrossFit Elite</h3><p class="text-on-secondary-container mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body-md">Competitive conditioning for the relentless athlete.</p></div></div>
+                <div class="group relative h-96 overflow-hidden rounded-xl cursor-pointer"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJtyWbQhLjr7-9hDkQ1QDEG6WeajDlR2j5aNf7N8Rm-NQV0kfKIWYYZ7hH0A8YA29IT7l4NOnWgwJ3TKG7kEoTNEDac1Bf_80Qo5Ibd2kAqhIqlgG1NuA7lbQP20XGGcwiVehWMoYsoiEAAVakHcexEYX9DL3aQOtur_XF2-nsSq0Gh2hOhG0pZ69Atm3Yvz3XoLOHOBcV66UhuBMgStgZ6CEB9xSlBNjQ9AkV-O_4mw50TRwuxewjCpEWO1XGlTkFf-NyrGnMZng')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div><div class="absolute bottom-0 p-8"><h3 class="font-headline-md text-headline-md uppercase">Endurance Pro</h3><p class="text-on-secondary-container mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body-md">Unlock superior cardiovascular efficiency.</p></div></div>
+                <div class="group relative h-96 overflow-hidden rounded-xl cursor-pointer"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDj0P94uYNQ3Pmfkfl-8iyTPRIGAAW3TMLoyOuEfVYPBhbxcsocCNnqBUfaQp4bvOcD4ahOy9NCQRHotV3wgp2pziyWB0YmbIS_c2g7ygXQHFoIEFRnDWP-TsDo84Omc7GBXp001QJLAREnOOXVw928ePid9kWWJAsJ8fbCoLECBj37_xR3e5P89XF1K-yKfdNaqPPYlkOeFQmVgpCCyT98pbVgT_VXeAQn8J3RNcddz5MtC4IFjXnDIAnOhhihKip0lMjfaRsVaQM')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div><div class="absolute bottom-0 p-8"><h3 class="font-headline-md text-headline-md uppercase">Absolute Strength</h3><p class="text-on-secondary-container mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body-md">The pursuit of the heaviest lifts in an elite setting.</p></div></div>
+                <div class="group relative h-96 overflow-hidden rounded-xl cursor-pointer"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsbjAudTTmAeCk4McJqmacGE7cEXVZfQklPc9LhlDLC9JNczpEgiQVsX-kJV2AqLSyzBU9qgfhpd-n_2zVPowQ9JuPYPBWT2iHQgUTlVdxPyzj-A3YZscnrBKI3xq4_mUZN7CIl7DDOakjegIkAukdXv4wxGqQlaQSYrzj0b7YhO4-hY6QsqjuKfM5H-bcH0Ad_w0MIXEc-4RJERslSkmWL1QQS0Ie5_NvDtgUJVV_DyNnudBux3pIfM8u98RApqld_5_P9oM7APM')"></div><div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div><div class="absolute bottom-0 p-8"><h3 class="font-headline-md text-headline-md uppercase">Functional Flow</h3><p class="text-on-secondary-container mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-body-md">Mobility and movement longevity for the modern leader.</p></div></div>
+            </div>
+        </section>
+
+        <!-- Program Detail Cards -->
+        <section class="py-stack-lg bg-surface-container-lowest">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="flex justify-between items-end mb-stack-md"><div><span class="font-label-caps text-label-caps text-tertiary-container mb-2 block">DEEP DIVE</span><h2 class="font-headline-lg text-headline-lg uppercase">PROGRAM ARCHITECTURE</h2></div></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-card p-10 rounded-xl"><div class="flex items-center gap-4 mb-6"><span class="material-symbols-outlined text-tertiary-container text-4xl">fitness_center</span><h3 class="font-subheading-lg text-subheading-lg">Performance Protocols</h3></div><ul class="space-y-4 font-body-md text-on-surface-variant"><li class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-container text-xl">check_circle</span> Biometric tracking and data-led programming</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-container text-xl">check_circle</span> High-frequency nervous system adaptation</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-container text-xl">check_circle</span> Periodized blocks for peak seasonal performance</li></ul></div>
+                    <div class="glass-card p-10 rounded-xl"><div class="flex items-center gap-4 mb-6"><span class="material-symbols-outlined text-tertiary-container text-4xl">restaurant</span><h3 class="font-subheading-lg text-subheading-lg">Nutritional Strategy</h3></div><ul class="space-y-4 font-body-md text-on-surface-variant"><li class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-container text-xl">check_circle</span> Custom macro-nutrient mapping for your biology</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-container text-xl">check_circle</span> Supplementation guidance for cognitive & physical load</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-container text-xl">check_circle</span> 24/7 access to nutrition performance coaches</li></ul></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Pricing -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="pricing-table">
+            <div class="text-center mb-stack-lg"><h2 class="font-headline-lg text-headline-lg uppercase mb-4">MEMBERSHIP TIERS</h2><p class="font-body-lg text-on-surface-variant max-w-xl mx-auto">Invest in your greatest asset. Elite memberships for the dedicated few.</p></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-card p-8 rounded-xl flex flex-col hover:border-white/20 transition-all duration-300"><span class="font-label-caps text-label-caps text-on-secondary-container mb-2">STARTER</span><h3 class="font-headline-md text-headline-md uppercase mb-4">MONTHLY</h3><div class="mb-6"><span class="text-4xl font-bold font-display-lg">$249</span><span class="text-on-secondary-container font-body-md">/mo</span></div><ul class="space-y-3 mb-8 flex-grow font-body-md text-on-surface-variant"><li>All Gym Access</li><li>Basic Assessment</li><li>Digital App Access</li></ul><button class="w-full border border-white/20 py-4 rounded-lg font-label-caps text-label-caps hover:bg-white/5 transition-all" onclick="navigateTo('contact')">SELECT PLAN</button></div>
+                <div class="glass-card p-8 rounded-xl flex flex-col border border-white/10 hover:border-white/20 transition-all duration-300"><span class="font-label-caps text-label-caps text-on-secondary-container mb-2">COMMITTED</span><h3 class="font-headline-md text-headline-md uppercase mb-4">QUARTERLY</h3><div class="mb-6"><span class="text-4xl font-bold font-display-lg">$649</span><span class="text-on-secondary-container font-body-md">/qr</span></div><ul class="space-y-3 mb-8 flex-grow font-body-md text-on-surface-variant"><li>All Gym Access</li><li>1 PT Session / mo</li><li>Bio-Metric Analysis</li></ul><button class="w-full border border-white/20 py-4 rounded-lg font-label-caps text-label-caps hover:bg-white/5 transition-all" onclick="navigateTo('contact')">SELECT PLAN</button></div>
+                <div class="relative bg-surface-container-high p-8 rounded-xl flex flex-col border-2 border-tertiary-container shadow-[0_0_40px_rgba(229,9,20,0.1)] scale-105 z-10"><div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-tertiary-container text-white px-4 py-1 rounded-full font-label-caps text-[10px] tracking-widest">MOST POPULAR</div><span class="font-label-caps text-label-caps text-tertiary-container mb-2">DOMINANCE</span><h3 class="font-headline-md text-headline-md uppercase mb-4">YEARLY</h3><div class="mb-6"><span class="text-4xl font-bold font-display-lg">$1,999</span><span class="text-on-secondary-container font-body-md">/yr</span></div><ul class="space-y-3 mb-8 flex-grow font-body-md text-on-surface-variant"><li>All Gym Access</li><li>Monthly PT Sessions</li><li>Guest Passes Included</li><li>Priority Booking</li></ul><button class="w-full crimson-gradient py-4 rounded-lg font-label-caps text-label-caps text-white glow-shadow" onclick="navigateTo('contact')">SELECT PLAN</button></div>
+                <div class="glass-card p-8 rounded-xl flex flex-col hover:border-white/20 transition-all duration-300"><span class="font-label-caps text-label-caps text-on-secondary-container mb-2">LEGACY</span><h3 class="font-headline-md text-headline-md uppercase mb-4">VIP ELITE</h3><div class="mb-6"><span class="text-4xl font-bold font-display-lg">$4,500</span><span class="text-on-secondary-container font-body-md">/yr</span></div><ul class="space-y-3 mb-8 flex-grow font-body-md text-on-surface-variant"><li>Private Studio Access</li><li>Unlimited 1-on-1 PT</li><li>Elite Concierge</li><li>Nutrition Meal Plan</li></ul><button class="w-full border border-white/20 py-4 rounded-lg font-label-caps text-label-caps hover:bg-white/5 transition-all" onclick="navigateTo('contact')">ENQUIRE NOW</button></div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-x-auto">
+            <h2 class="font-headline-md text-headline-md uppercase mb-stack-md">TIER COMPARISON</h2>
+            <table class="w-full text-left border-collapse min-w-[800px]">
+                <thead><tr class="border-b border-white/10"><th class="py-6 font-label-caps text-label-caps text-on-secondary-container uppercase">Features</th><th class="py-6 font-label-caps text-label-caps text-center uppercase">Monthly</th><th class="py-6 font-label-caps text-label-caps text-center uppercase">Quarterly</th><th class="py-6 font-label-caps text-label-caps text-center text-tertiary-container uppercase">Yearly</th><th class="py-6 font-label-caps text-label-caps text-center uppercase">VIP Elite</th></tr></thead>
+                <tbody class="font-body-md">
+                    <tr class="border-b border-white/5 hover:bg-white/[0.02] transition-colors"><td class="py-6">Global Gym Access</td><td class="py-6 text-center"><span class="material-symbols-outlined text-tertiary-container">check</span></td><td class="py-6 text-center"><span class="material-symbols-outlined text-tertiary-container">check</span></td><td class="py-6 text-center"><span class="material-symbols-outlined text-tertiary-container">check</span></td><td class="py-6 text-center"><span class="material-symbols-outlined text-tertiary-container">check</span></td></tr>
+                    <tr class="border-b border-white/5 hover:bg-white/[0.02] transition-colors"><td class="py-6">Guest Passes (Monthly)</td><td class="py-6 text-center text-on-secondary-container">0</td><td class="py-6 text-center">2</td><td class="py-6 text-center">5</td><td class="py-6 text-center">Unlimited</td></tr>
+                    <tr class="border-b border-white/5 hover:bg-white/[0.02] transition-colors"><td class="py-6">PT Sessions / mo</td><td class="py-6 text-center text-on-secondary-container">—</td><td class="py-6 text-center">1</td><td class="py-6 text-center">2</td><td class="py-6 text-center">Unlimited</td></tr>
+                    <tr class="border-b border-white/5 hover:bg-white/[0.02] transition-colors"><td class="py-6">Recovery Suite Access</td><td class="py-6 text-center text-on-secondary-container">—</td><td class="py-6 text-center text-on-secondary-container">—</td><td class="py-6 text-center"><span class="material-symbols-outlined text-tertiary-container">check</span></td><td class="py-6 text-center"><span class="material-symbols-outlined text-tertiary-container">check</span></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Benefits -->
+        <section class="py-stack-lg bg-[#0e0e0e]">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+                <h2 class="font-headline-lg text-headline-lg uppercase mb-stack-md">PREMIUM AMENITIES</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full glass-card flex items-center justify-center mb-4 text-tertiary-container"><span class="material-symbols-outlined text-3xl">dry_cleaning</span></div><h4 class="font-subheading-sm text-subheading-sm uppercase">Fresh Towels</h4><p class="text-xs text-on-secondary-container mt-2 font-body-md">Scented eucalyptus towels</p></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full glass-card flex items-center justify-center mb-4 text-tertiary-container"><span class="material-symbols-outlined text-3xl">blender</span></div><h4 class="font-subheading-sm text-subheading-sm uppercase">Smoothie Bar</h4><p class="text-xs text-on-secondary-container mt-2 font-body-md">Post-workout performance</p></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full glass-card flex items-center justify-center mb-4 text-tertiary-container"><span class="material-symbols-outlined text-3xl">lock</span></div><h4 class="font-subheading-sm text-subheading-sm uppercase">Smart Lockers</h4><p class="text-xs text-on-secondary-container mt-2 font-body-md">Secure, keyless entry</p></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full glass-card flex items-center justify-center mb-4 text-tertiary-container"><span class="material-symbols-outlined text-3xl">sauna</span></div><h4 class="font-subheading-sm text-subheading-sm uppercase">Luxury Sauna</h4><p class="text-xs text-on-secondary-container mt-2 font-body-md">Infrared recovery technology</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+            <h2 class="font-headline-lg text-headline-lg uppercase mb-stack-md">THE ELITE PROCESS</h2>
+            <div class="relative flex flex-col md:flex-row gap-12">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-[2px] bg-white/10 -translate-y-1/2 z-0"></div>
+                <div class="relative z-10 flex-1 group"><div class="w-12 h-12 rounded-full crimson-gradient flex items-center justify-center font-headline-md text-white mb-6 group-hover:scale-110 transition-transform">01</div><h3 class="font-subheading-lg text-subheading-lg mb-2">CONSULTATION</h3><p class="font-body-md text-on-surface-variant">Deep dive into your biometrics, injury history, and long-term performance objectives.</p></div>
+                <div class="relative z-10 flex-1 group"><div class="w-12 h-12 rounded-full glass-card border border-tertiary-container flex items-center justify-center font-headline-md text-white mb-6 group-hover:scale-110 transition-transform">02</div><h3 class="font-subheading-lg text-subheading-lg mb-2">PROGRAM DESIGN</h3><p class="font-body-md text-on-surface-variant">Engineering a custom 12-week blueprint tailored specifically to your physiological profile.</p></div>
+                <div class="relative z-10 flex-1 group"><div class="w-12 h-12 rounded-full glass-card border border-tertiary-container flex items-center justify-center font-headline-md text-white mb-6 group-hover:scale-110 transition-transform">03</div><h3 class="font-subheading-lg text-subheading-lg mb-2">EXECUTION</h3><p class="font-body-md text-on-surface-variant">Relentless pursuit of the plan with real-time tracking and adjustment from our coaching staff.</p></div>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section class="py-stack-lg bg-surface-container-low">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
+                <h2 class="font-headline-lg text-headline-lg uppercase text-center mb-stack-md">FREQUENT QUESTIONS</h2>
+                <div class="space-y-4">
+                    <details class="group glass-card rounded-lg overflow-hidden" open><summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-white/[0.05] transition-colors"><span class="font-subheading-sm text-subheading-sm">Can I freeze my membership?</span><span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span></summary><div class="px-6 pb-6 font-body-md text-on-surface-variant">Yes, yearly members can freeze their membership for up to 3 months per year for travel or health reasons. Quarterly members are permitted 1 month of suspension.</div></details>
+                    <details class="group glass-card rounded-lg overflow-hidden"><summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-white/[0.05] transition-colors"><span class="font-subheading-sm text-subheading-sm">Are personal trainers included?</span><span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span></summary><div class="px-6 pb-6 font-body-md text-on-surface-variant">Depending on your tier. Quarterly and Yearly members receive complimentary monthly sessions. VIP Elite members enjoy unlimited 1-on-1 coaching.</div></details>
+                    <details class="group glass-card rounded-lg overflow-hidden"><summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-white/[0.05] transition-colors"><span class="font-subheading-sm text-subheading-sm">What is the cancellation policy?</span><span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span></summary><div class="px-6 pb-6 font-body-md text-on-surface-variant">We require a 30-day notice for all monthly membership cancellations. Multi-month plans are binding for the duration but can be transferred to others.</div></details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop">
+            <div class="relative overflow-hidden rounded-3xl p-12 md:p-24 text-center max-w-container-max mx-auto">
+                <div class="absolute inset-0 z-0"><div class="w-full h-full bg-cover bg-center brightness-[0.4]" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGrVIxTh2YKEhAnyyYM6JkvmpK2PFfep7Q35m3xq7IYKI9TEp06AvrMTF6VOJrDoNM5r9IWHEopCBPZX6sK9vpYguPD-aHYsidxa4P4kdvJyOOPRPUwoV2EhH-jEexOc02IdJDMX75GjvE42IUHQ9em1IhuMo3uWPcusn5FNTrGdSaFuu2AqYPIZSAuae9_TBeIT-KMQ-x0s5CUsvOYx6ldD7xcQWRBjqMQjFRMRZ9JrrY6jkCb3UGoDlB5Fbn5h155K2ZQbrQzsM')"></div><div class="absolute inset-0 crimson-gradient opacity-40"></div></div>
+                <div class="relative z-10"><h2 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase mb-6">TRANSFORM TODAY</h2><p class="font-subheading-lg text-subheading-lg mb-10 max-w-2xl mx-auto">Limited slots available for new 1-on-1 coaching intakes. Secure your legacy now.</p><button class="bg-white text-black h-16 px-12 rounded-lg font-label-caps text-label-caps hover:scale-105 transition-all shadow-xl" onclick="navigateTo('contact')">START YOUR JOURNEY</button></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== PAGE: TRAINERS ========== -->
+    <div id="page-trainers" class="page-section pt-24">
+        <!-- Hero -->
+        <section class="relative h-[921px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0"><div class="w-full h-full bg-cover bg-center" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuByxO4351gPFIqx4U2LhQj0yQP0MBNkmRgk58q4xDuKbsOKU33Wb3goo0R8nby0GGEQG_salarPmoCDeTaPTLbWeijFFvU6faMNvGAyX3pvwCdeR-VyF_0AlFjvlgf9DmxxW1SVjk2qrqKlAy5WkWBGpOWQJrWUojdoXvm5FbSx0VyIqZKmnTmFYE_i7XdG-0XKadZEoAQp3lBjdrtTi32fSYxmT0iB5Q2Cryxdm2afuOmfJdChHc4qx8yVH5k0xg_-9t41BIboOwc')"></div><div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div></div>
+            <div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-left">
+                <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-4 leading-tight tracking-tight">THE <span class="text-tertiary-container">ELITE</span> <br /> ROSTER</h1>
+                <p class="font-subheading-lg text-subheading-lg text-on-secondary-container max-w-2xl mb-8">Guided by world-class athletes, Olympians, and master tacticians. We don't just train; we transform legacy.</p>
+                <div class="flex flex-col md:flex-row gap-4"><button class="crimson-gradient px-12 py-5 rounded-none font-label-caps text-label-caps text-white uppercase tracking-widest hover:scale-105 transition-all" onclick="document.getElementById('trainer-grid').scrollIntoView({behavior:'smooth'})">Explore Specializations</button><button class="border border-white/20 hover:bg-white/5 backdrop-blur-md px-12 py-5 rounded-none font-label-caps text-label-caps text-white uppercase tracking-widest transition-all">View Records</button></div>
+            </div>
+        </section>
+
+        <!-- Featured Coaches -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="scroll-reveal mb-16"><span class="font-label-caps text-label-caps text-tertiary-container uppercase tracking-[0.2em] mb-4 block">Head Training Staff</span><h2 class="font-headline-lg text-headline-lg">THE ARCHITECTS OF POWER</h2></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+                <div class="scroll-reveal glass-card flex flex-col md:flex-row h-full overflow-hidden group"><div class="w-full md:w-1/2 h-96 md:h-auto overflow-hidden"><img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL8CQVbQTWCt4sA6_x8KzG2GFcF6N8UilDcjBeL6sfqEpnI6KFvOQ-9aSF9mS9pBqUKn8iZ1IBV3e2BhIfQWbnAggNMro7IOFIaBS49wVPNNhZDbdfkRw5fO6zDkEdDg9g6bTiLQHnhvk7xlEDmB6p5WUDGDYklqZPOoLshwuOUXOGDEx0glHXRFmENVp2Q2IFE9igOiVvgYLniNKmN0zTMvIKqEw76Ah8JfJepky2XvZnZGG9359gPspcAsLHI1ZPa0fUGCuTg2s" /></div><div class="p-stack-md md:w-1/2 flex flex-col justify-center"><div class="mb-6"><h3 class="font-headline-md text-headline-md mb-1">MARCUS VANCE</h3><p class="font-label-caps text-label-caps text-tertiary-container">HEAD OF HUMAN PERFORMANCE</p></div><p class="font-body-md text-body-md text-on-secondary-container mb-6 italic">"Excellence is not an act, but a habit. We build habits that withstand the test of time."</p><div class="space-y-2 mb-8"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-container" style="font-size:18px;">verified</span><span class="text-on-surface font-subheading-sm text-subheading-sm">Pro-Athlete S&amp;C Specialist</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-container" style="font-size:18px;">verified</span><span class="text-on-surface font-subheading-sm text-subheading-sm">Master Bio-Mechanics Degree</span></div></div><span class="text-tertiary-container font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all uppercase cursor-pointer">Read Full Bio <span class="material-symbols-outlined">arrow_forward</span></span></div></div>
+                <div class="scroll-reveal glass-card flex flex-col md:flex-row h-full overflow-hidden group"><div class="w-full md:w-1/2 h-96 md:h-auto overflow-hidden"><img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCniQq9iChoum1fWrh3qedILrnUu2sfct2RKz3K3Tf_O6YOZiLAuw6yTKCh9AlSP5rzGvIcKOnx4gqZW_L9MvMip6igS5NnUFmeYY2mafxvYnaftkA-_VTNq4ifwhn_c33jLZNOIK4coifVXncFL9mDqyhNIjvQDpAlsPEytyNYoQ-OXW36e0TePIxbkk06TbO6Qi46esd2Ur0gTxbgMcDl_l51wDFqXjHcNfbQeN0rn9jVFDDsplfO4G13fsQ6RQqzgipbFFkr4RA" /></div><div class="p-stack-md md:w-1/2 flex flex-col justify-center"><div class="mb-6"><h3 class="font-headline-md text-headline-md mb-1">ELENA ROSSI</h3><p class="font-label-caps text-label-caps text-tertiary-container">DIRECTOR OF HYPERTROPHY</p></div><p class="font-body-md text-body-md text-on-secondary-container mb-6 italic">"Precision in movement leads to perfection in physique. We leave nothing to chance."</p><div class="space-y-2 mb-8"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-container" style="font-size:18px;">verified</span><span class="text-on-surface font-subheading-sm text-subheading-sm">IFBB Professional Athlete</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-container" style="font-size:18px;">verified</span><span class="text-on-surface font-subheading-sm text-subheading-sm">Advanced Metabolic Nutritionist</span></div></div><span class="text-tertiary-container font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all uppercase cursor-pointer">Read Full Bio <span class="material-symbols-outlined">arrow_forward</span></span></div></div>
+            </div>
+        </section>
+
+        <!-- Trainer Grid -->
+        <section class="py-stack-lg bg-surface-container-lowest" id="trainer-grid">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <div class="scroll-reveal"><span class="font-label-caps text-label-caps text-tertiary-container uppercase tracking-[0.2em] mb-4 block">The Collective</span><h2 class="font-headline-lg text-headline-lg">SPECIALIST SQUAD</h2></div>
+                    <div class="flex gap-4 scroll-reveal"><select class="bg-surface border-white/10 text-on-surface font-label-caps py-3 px-6 rounded-none focus:ring-tertiary-container focus:border-tertiary-container"><option>All Specializations</option><option>Powerlifting</option><option>Mobility</option><option>Combat Training</option></select></div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-stack-sm">
+                    <div class="scroll-reveal group"><div class="glass-card p-4 h-full flex flex-col transition-all duration-500"><div class="relative overflow-hidden aspect-[3/4] mb-6"><img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA98coPb2tIZIvxQmD_GAYLkpYwOvblgp5EZPnkoJ1UGU466zREBedpNa7rI1mT__PUOq3fBmInTky65xB_HU2oyRTlCh_FwFO7EQU53w-FqQmkaovWcO34soeAhX9TcW74_dtkx9ACWzow3KZUVsL3eofKpws8ET-LhE4QnYTOLUAZhLYoAucbQ0poE6ioWsIPzU523tiSRKsKP-WdhZX0aRisqY7r7riegTNyqyZeP0T761EQ6bzBqD-lqfA0WAJCZ8bVUYpK-fk" /><div class="absolute bottom-4 left-4 flex gap-2"><span class="bg-surface-variant/80 backdrop-blur-md px-3 py-1 font-label-caps text-[10px] text-white">PRO</span><span class="bg-tertiary-container/80 backdrop-blur-md px-3 py-1 font-label-caps text-[10px] text-white">S&amp;C</span></div></div><h4 class="font-headline-md text-headline-md mb-1">DAMIAN REED</h4><p class="font-label-caps text-[10px] text-on-secondary-container uppercase tracking-widest mb-4">Strength Architect</p><div class="flex flex-wrap gap-2 mb-6"><span class="bg-secondary-container/30 px-3 py-1 rounded-full text-[10px] font-medium text-tertiary">#Power</span><span class="bg-secondary-container/30 px-3 py-1 rounded-full text-[10px] font-medium text-tertiary">#Technique</span></div><div class="mt-auto pt-4 border-t border-white/5 flex justify-between items-center"><div class="flex gap-3"><a class="text-on-secondary-container hover:text-tertiary-container transition-colors" href="#"><span class="material-symbols-outlined" style="font-size:18px;">public</span></a><a class="text-on-secondary-container hover:text-tertiary-container transition-colors" href="#"><span class="material-symbols-outlined" style="font-size:18px;">chat</span></a></div><span class="material-symbols-outlined text-tertiary-container opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span></div></div></div>
+                    <div class="scroll-reveal group"><div class="glass-card p-4 h-full flex flex-col transition-all duration-500"><div class="relative overflow-hidden aspect-[3/4] mb-6"><img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCpFJNmhnUndhEODMzXhSANg7E_i5DHqS_mPaBkc1zgy82c-Sk3ISca3d-Tp-CVQCquxP6OfVdP8JjymtwGPM1R9I9dt-qN3k5hj2P6mkLpuIy3qihPUjyl3lsJfSwJY0UhPqIf4zc2wz76KhXn0kbXZVwS5wxft6Mfj1x23fICN19l5tqjt7D7oipvR7ekH0E1Tz0axVZ1-diy76FrGGNAZp2jP_7pZrOrhi-xKWYOua34jJnZRZDnBdL7nwwBSQa4Th6VrbhVag" /><div class="absolute bottom-4 left-4 flex gap-2"><span class="bg-surface-variant/80 backdrop-blur-md px-3 py-1 font-label-caps text-[10px] text-white">ELITE</span><span class="bg-tertiary-container/80 backdrop-blur-md px-3 py-1 font-label-caps text-[10px] text-white">CORE</span></div></div><h4 class="font-headline-md text-headline-md mb-1">SARAH CHEN</h4><p class="font-label-caps text-[10px] text-on-secondary-container uppercase tracking-widest mb-4">Mobility Master</p><div class="flex flex-wrap gap-2 mb-6"><span class="bg-secondary-container/30 px-3 py-1 rounded-full text-[10px] font-medium text-tertiary">#Flexibility</span><span class="bg-secondary-container/30 px-3 py-1 rounded-full text-[10px] font-medium text-tertiary">#Recovery</span></div><div class="mt-auto pt-4 border-t border-white/5 flex justify-between items-center"><div class="flex gap-3"><a class="text-on-secondary-container hover:text-tertiary-container transition-colors" href="#"><span class="material-symbols-outlined" style="font-size:18px;">public</span></a><a class="text-on-secondary-container hover:text-tertiary-container transition-colors" href="#"><span class="material-symbols-outlined" style="font-size:18px;">chat</span></a></div><span class="material-symbols-outlined text-tertiary-container opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span></div></div></div>
+                    <div class="scroll-reveal group"><div class="glass-card p-4 h-full flex flex-col transition-all duration-500"><div class="relative overflow-hidden aspect-[3/4] mb-6"><img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcf6LPaV63LTLcEPesluNJTnikeIPh3wrvhmCudnGfkC-ojHzrj2HtsxNJ0OoywMUEBWUDhxmVF8DkSVJ2zebQIRk8JBIftfgNU6VR5DUIQzXoc-yGviOGgjFxqi3hUsC69_ReEvb14CNyO9USUMsn3oKBwUdrXE0TUNg-3DS7KZZM0mfZ5IKnjbDfVFBicHy2Ifb6dahbyPM4SmpiFbbnu7BJdXdaegY6lcQkwiVEuoA09DMH9HPbaMt4phafhsxUiHT_EtyLW5I" /><div class="absolute bottom-4 left-4 flex gap-2"><span class="bg-surface-variant/80 backdrop-blur-md px-3 py-1 font-label-caps text-[10px] text-white">COMBAT</span><span class="bg-tertiary-container/80 backdrop-blur-md px-3 py-1 font-label-caps text-[10px] text-white">HIIT</span></div></div><h4 class="font-headline-md text-headline-md mb-1">VICTOR KANE</h4><p class="font-label-caps text-[10px] text-on-secondary-container uppercase tracking-widest mb-4">Tactical Coach</p><div class="flex flex-wrap gap-2 mb-6"><span class="bg-secondary-container/30 px-3 py-1 rounded-full text-[10px] font-medium text-tertiary">#Boxing</span><span class="bg-secondary-container/30 px-3 py-1 rounded-full text-[10px] font-medium text-tertiary">#Conditioning</span></div><div class="mt-auto pt-4 border-t border-white/5 flex justify-between items-center"><div class="flex gap-3"><a class="text-on-secondary-container hover:text-tertiary-container transition-colors" href="#"><span class="material-symbols-outlined" style="font-size:18px;">public</span></a><a class="text-on-secondary-container hover:text-tertiary-container transition-colors" href="#"><span class="material-symbols-outlined" style="font-size:18px;">chat</span></a></div><span class="material-symbols-outlined text-tertiary-container opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span></div></div></div>
+                    <div class="scroll-reveal group"><div class="glass-card p-4 h-full flex flex-col transition-all duration-500"><div class="relative overflow-hidden aspect-[3/4] mb-6"><img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKXD-2GRwf6lctHo2J4XFJ2BZ0Tg1Ke0sBqDJ0rWyMNwT1hi2TS27_2zkPSTEi0sfkYPinNpC50ocAnZk6jEj9PdYiI4wd3M4ya_bTydPdC3Jm3e-Wu13O1BYsEXXnSc5C8vzG6w0zfitbd1DJhj4t3jj9EJ57K4w_iCrOfY6frRcqVGr-dL7Pi3pWV6rAyth0dOByUk7uosw0oqpGtHzFT9R5iummehzcC_zSamsulC9zlNW0glfOygPf1q7pcRIzHKMavBx3_OY" /><div class="absolute bottom-4 left-4 flex gap-2"><span class="bg-surface-variant/80 backdrop-blur-md px-3 py-1 font-label-caps text-[10px] text-white">BIO</span><span class="bg-tertiary-container/80 backdrop-blur-md px-3 py-1 font-label-caps text-[10px] text-white">DIET</span></div></div><h4 class="font-headline-md text-headline-md mb-1">MAYA VAZ</h4><p class="font-label-caps text-[10px] text-on-secondary-container uppercase tracking-widest mb-4">Bio-Performance</p><div class="flex flex-wrap gap-2 mb-6"><span class="bg-secondary-container/30 px-3 py-1 rounded-full text-[10px] font-medium text-tertiary">#Science</span><span class="bg-secondary-container/30 px-3 py-1 rounded-full text-[10px] font-medium text-tertiary">#Optimization</span></div><div class="mt-auto pt-4 border-t border-white/5 flex justify-between items-center"><div class="flex gap-3"><a class="text-on-secondary-container hover:text-tertiary-container transition-colors" href="#"><span class="material-symbols-outlined" style="font-size:18px;">public</span></a><a class="text-on-secondary-container hover:text-tertiary-container transition-colors" href="#"><span class="material-symbols-outlined" style="font-size:18px;">chat</span></a></div><span class="material-symbols-outlined text-tertiary-container opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="text-center mb-16 scroll-reveal"><span class="font-label-caps text-label-caps text-tertiary-container uppercase tracking-[0.2em] mb-4 block">Our Journey</span><h2 class="font-headline-lg text-headline-lg">THE PATH TO ELITE</h2></div>
+            <div class="relative"><div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-white/10 hidden md:block"></div>
+                <div class="space-y-16">
+                    <div class="flex flex-col md:flex-row items-center scroll-reveal"><div class="md:w-1/2 md:pr-12 text-center md:text-right"><span class="font-display-lg text-headline-lg text-tertiary-container opacity-20">2012</span><h4 class="font-subheading-lg text-subheading-lg mb-2">Foundation of Grit</h4><p class="text-on-secondary-container font-body-md text-body-md">Our lead trainers started in a 500sqft underground garage, obsessed with pure strength and raw results.</p></div><div class="w-4 h-4 rounded-full bg-tertiary-container z-10 hidden md:block border-4 border-surface shadow-[0_0_15px_rgba(229,9,20,0.5)]"></div><div class="md:w-1/2 md:pl-12"></div></div>
+                    <div class="flex flex-col md:flex-row items-center scroll-reveal"><div class="md:w-1/2 md:pr-12"></div><div class="w-4 h-4 rounded-full bg-tertiary-container z-10 hidden md:block border-4 border-surface shadow-[0_0_15px_rgba(229,9,20,0.5)]"></div><div class="md:w-1/2 md:pl-12 text-center md:text-left"><span class="font-display-lg text-headline-lg text-tertiary-container opacity-20">2018</span><h4 class="font-subheading-lg text-subheading-lg mb-2">Olympic Standards</h4><p class="text-on-secondary-container font-body-md text-body-md">Recruited two former Olympians to spearhead our performance protocols and technical standards.</p></div></div>
+                    <div class="flex flex-col md:flex-row items-center scroll-reveal"><div class="md:w-1/2 md:pr-12 text-center md:text-right"><span class="font-display-lg text-headline-lg text-tertiary-container opacity-20">2024</span><h4 class="font-subheading-lg text-subheading-lg mb-2">Elite Strength Global</h4><p class="text-on-secondary-container font-body-md text-body-md">Now the benchmark for premium performance training, servicing over 500 professional athletes annually.</p></div><div class="w-4 h-4 rounded-full bg-tertiary-container z-10 hidden md:block border-4 border-surface shadow-[0_0_15px_rgba(229,9,20,0.5)]"></div><div class="md:w-1/2 md:pl-12"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="py-stack-lg bg-surface-container">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="mb-16 scroll-reveal"><h2 class="font-headline-lg text-headline-lg">REAL IMPACT</h2><p class="font-subheading-lg text-subheading-lg text-on-secondary-container">Transformations mentored by our elite roster.</p></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+                    <div class="scroll-reveal glass-card p-8 flex flex-col md:flex-row gap-6"><div class="w-32 h-32 flex-shrink-0 relative overflow-hidden rounded-full border-2 border-tertiary-container/30"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYGp_HN8HadoJEiA5wWntQ1paVIw2KoB0YUxolhcnagVC1okEU1skQOfKzLmAskoZszouwasI-jenJfJHJFL1qSQe3sOm8BHumVNrPzUGrditSKciSxDPT6_KjUNNPl21hFz1RuQbCgD-W3_804Hw8i_d5lHkIKtGPficfWi9MpAsF2vWroPsHichuZo70MEbmvI-32WH2k41PEpRanarudPxQUdJ4Cj6nGXye6AHkchnLKDC1jCUloTcnplp5orozEugFgIPE-Ao" /></div><div><div class="flex text-tertiary-container mb-2"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div><p class="font-body-lg text-body-lg text-on-surface mb-4 italic">"Training with Elena was the pivot point of my career. Her technical mastery and nutritional insight reshaped my entire approach to athletics."</p><div><span class="font-subheading-sm text-subheading-sm block">JONATHAN BLAKE</span><span class="font-label-caps text-[10px] text-tertiary-container">Pro Triathlete • Trained by Elena Rossi</span></div></div></div>
+                    <div class="scroll-reveal glass-card p-8 flex flex-col md:flex-row gap-6"><div class="w-32 h-32 flex-shrink-0 relative overflow-hidden rounded-full border-2 border-tertiary-container/30"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkC1WbalusRKuoEatzbT4KeefSvZAQzXUhUbfg-aJFQS8_WDRCZvDj5-1bN_WujPaTEeWvq6wrqnDJSCkPMzdf4Dd90OkXM_IEBXcwU8TzQOWjtOeIIq1i1u2OkLwq0lVc8WW5qJhbuxjRhjSZA0WnPy-jJEWlvbFvxE4FcAqg19tL_MQp7qD6Mttnp-kp8DGCkk2rI_VK61NqKXqGxDnb8-gUe84o5Tu-i8kZTBFLjlX7K0Ow9za8MbVzX89uOj4iBqFb6IS8XG4" /></div><div><div class="flex text-tertiary-container mb-2"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div><p class="font-body-lg text-body-lg text-on-surface mb-4 italic">"Marcus doesn't just give you a workout; he gives you a blueprint for human optimization. My explosive power increased by 30% in just six months."</p><div><span class="font-subheading-sm text-subheading-sm block">SARAH MONROE</span><span class="font-label-caps text-[10px] text-tertiary-container">Executive • Trained by Marcus Vance</span></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-stack-lg relative overflow-hidden">
+            <div class="absolute inset-0 z-0"><div class="w-full h-full bg-cover bg-fixed bg-center opacity-20" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzQtzUIvpEGrgNlOwYaeIfIolyW2Ju8RhPLVo8t9j1dWsUuMeQksDOo9WwUTvW0An7m6Mz8LJrQo_bnHQgsQWCSQ84dFgEwfajYvVFiLe26xpGIOXWCAjq_Lt7hbFA7DYH_Zln4_9XYgnzU6re1WcAdEn1fKzjHSNuvrMkc4z67ejFzFjUQb7Fyv4gTAjBN30P6xHXBVhpxOS-NlwWVLKG5aPayul_5cfoxSytazjQFLZMh6dUehoIZbdmI9JYSLjNIYjMj0kvQeA')"></div><div class="absolute inset-0 bg-surface/80 backdrop-blur-sm"></div></div>
+            <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center py-stack-md"><div class="scroll-reveal max-w-3xl mx-auto"><span class="font-label-caps text-label-caps text-tertiary-container uppercase tracking-[0.2em] mb-6 block">Direct Access</span><h2 class="font-display-lg text-display-lg-mobile md:text-headline-lg mb-8">READY TO BE <span class="text-tertiary-container">UNSTOPPABLE?</span></h2><p class="font-subheading-lg text-subheading-lg text-on-secondary-container mb-12">Not sure where to start? Take our 60-second assessment and we'll match you with the perfect coach for your specific goals.</p><button class="crimson-gradient px-12 py-6 rounded-none font-label-caps text-label-caps text-white uppercase tracking-[0.3em] hover:scale-105 active:scale-95 transition-all shadow-[0_0_40px_rgba(229,9,20,0.4)] flex items-center gap-4 mx-auto group" onclick="navigateTo('contact')">Match Me with a Trainer <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">bolt</span></button></div></div>
+        </section>
+    </div>
+
+    <!-- ========== PAGE: GALLERY ========== -->
+    <div id="page-gallery" class="page-section pt-24">
+        <!-- Hero -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0"><div class="w-full h-full bg-cover bg-center opacity-60" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBg2Yazb7OOQEW-0ccGxvfbgTtsO88CFFOWanj6zNktGwOYerAyDV0nWW_CQJxTlLL9lFyo2xpzWdK_Tdn24dkZgPUwqDNQu26z6Cu2h9QSO7sq7iTCpGceMXkeOlLsqE9vwo10ZrTYqEtNFO3F226DJ7vIkTqv0qvP8zGV7tEleer89CdfCYnSKmUgFvlw7mzVSaViEo1lRpD6-2xf1Kapg4xT8F2-3DI4syaYbIzaodiTgTv3w00I5FEY1lvdL1EjqSVOhwb1Vog')"></div></div>
+            <div class="relative z-10 text-center px-margin-mobile"><span class="font-label-caps text-label-caps text-tertiary-container mb-4 block tracking-[0.3em]">PEAK PERFORMANCE SPACES</span><h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white drop-shadow-2xl">THE SANCTUARY</h1><p class="font-subheading-lg text-subheading-lg max-w-2xl mx-auto mt-6 text-on-secondary-container">Where relentless ambition meets uncompromising luxury. Explore the arena built for elite momentum.</p></div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce"><span class="material-symbols-outlined text-white text-4xl">expand_more</span></div>
+        </section>
+
+        <!-- Masonry Gallery -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-stack-md gap-4">
+                <div><h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white uppercase">THE COLLECTION</h2><p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Every detail of our facility is engineered to inspire greatness and command results.</p></div>
+                <div class="flex gap-4 font-label-caps text-label-caps"><span class="text-tertiary-container border-b-2 border-tertiary-container pb-1 cursor-pointer">ALL</span><span class="text-on-secondary-container hover:text-white transition-colors cursor-pointer">FACILITIES</span><span class="text-on-secondary-container hover:text-white transition-colors cursor-pointer">EQUIPMENT</span><span class="text-on-secondary-container hover:text-white transition-colors cursor-pointer">CULTURE</span></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:auto-rows-[250px]">
+                <div class="relative group overflow-hidden md:col-span-2 md:row-span-2 rounded-lg"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEerDw3ciusX51EnhseWOdLXGgk8I3Ub4zV32w5OSCTV38FCKKOTIaUHMz8_-I7WnjWnJneAU79MVt-9WXjypETWaxkaKqxz8vILqDRjvT-dyZgXVl8TwXXDiLNa_GABsKLarinL66KSCGpxJBEfYsFFpWUxZdfDRpVtyTJiyV2jGgJUfns_KqKDrEXe_TTgpjpJSu4XbQZMOu9c06tmmb1fvdvsRyddD4JcfUAWIaB6V3Rpi6hV-U0daqSfrDcfUXayB-p33rpQM')"></div><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8 backdrop-blur-sm"><div class="translate-y-4 group-hover:translate-y-0 transition-transform"><p class="font-label-caps text-label-caps text-tertiary-container">FACILITY</p><h3 class="font-headline-md text-headline-md text-white">MAIN STRENGTH FLOOR</h3></div></div></div>
+                <div class="relative group overflow-hidden md:row-span-1 rounded-lg"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1WtLFB75V6H4ryXXHuby7g3PhxrHiRCB6I0Gvn4LoQBmXz0dRMoaALL7H3nFR89aMpISK88sJhWKludcNceRlzbxDy-kQ2CvylTvywUwqzkaHMfBNXXiT2xp2RdcvULeTVnoSrw6j_fbh_HzBlLSkqmGh0QHAJTfBcqck8GSltbEfJ1PMfY_FBJwFlUxaujNpP20v1VVpRjDvyO_a8M8zI8uWffjPvM1rk_fMmEINw0rRYrA2qLHr21uV7zvtPTXc3bEQ_Itc8Z8')"></div><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 backdrop-blur-sm"><h3 class="font-label-caps text-label-caps text-white">PRECISION TOOLS</h3></div></div>
+                <div class="relative group overflow-hidden md:row-span-2 rounded-lg"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQWty-aCesm5dKh5SaZnoIy7DIE8VIJec-lyjTOH-c-2K8pfHbboclJ3Rb54Wwv6Lct5O5TBtawiuMzrvfzsajPRSgzjnND2k3iUjip5n7OTkTZ-stbT4cN8d33ul53nRz_M7OzIk7bD6QuE1iqgAZsYzCE9vIUPvkKsiVraqF3knqv87jsoLDa_09gbH5ui2cJISm_nxzQ7Qo9xOBrLWKYTUAdqPD6k12UJZIi3AceWKte7Wd0ayai6jcG983Q_XKAFeFg97Czps')"></div><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 backdrop-blur-sm"><h3 class="font-label-caps text-label-caps text-white">PEAK PERFORMANCE</h3></div></div>
+                <div class="relative group overflow-hidden rounded-lg"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCleIVl57BnOuQ1g4isLRBf8m4_aJ7QHRwd-a-sL_laGf9Ra-fghoPeM71RbB6fCDqg3a-EU_vE2mw9S0mXeJuclIh3T7GvoHEurbzrjhI8HKZbtkSblRVPt7RezJlqi6A-JhqJwzRdPbqkSrFIjqn8oNVGm2NdbUzIfcLrI7JyvCGsPcGghIUCcCk7JXVjnBUsaBYtrJP4SwiEtRBGV1-54j1_0uY_hf9-9nh6tf5Ya1-5zojjaWKxAaEa0mwyJU-B6npqa7KLYPc')"></div></div>
+                <div class="relative group overflow-hidden md:col-span-2 rounded-lg"><div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_7syuVHbhP00GzUBT_aIAcOBrrp04oqDpsbKEr7_ZDSkfgauv3brO3e2LaIW6y0P4a3tzfqMoRX7ebQ2011eH0SM7AmeQxb6ol7CXkuVIxoo2Ok9V4M3MYy_lmyQ3mN5G1pf6JbNLrCvQUB1_mX3bNnDtnxN-1Y4flOn74RG6wJP2-rzIhL7y2le4R24U_6n1PHvr63y7tW-MRQQDU049NSbjCjwB2qgkh7L3U8p4oKPSuHJI3eK_zUXKO1kX5ahRX52hHRc_qa8')"></div></div>
+            </div>
+        </section>
+
+        <!-- Transformation Gallery -->
+        <section class="py-stack-lg bg-surface-container-lowest">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <h2 class="font-headline-lg text-headline-lg text-white mb-stack-md text-center">THE TRANSFORMATION</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+                    <div class="glass-card p-1 rounded-xl group"><div class="relative aspect-[4/3] overflow-hidden rounded-lg bg-black"><div class="absolute inset-0 bg-cover bg-center" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxm-jPekTBuMRMh0GQGfM6iTpLA6IyUAQ8ezYhWThapC9YxLRphas1EngGBXzAVE8DFs97Nesu5RHx4_Z7cgBLMHK_5ptjY3RdjglqC8Rul5jjFIbOxiwBfpiyHff3_XQciDxJ7PiBNnk_iR5yUhJj-GWlYQkXfhpqf9vpL9PHnGRC5QsBCpzn7sBhehFD9iPMKrAj0LIVDqEGIjuzl2SWqO21b7vZHLSw_5xcIsXkARYHtTHt3wSolIXT9qnYPw7TeMXipy-HIdM')"></div><div class="absolute inset-0 bg-cover bg-center border-r-2 border-white/30" id="before-mask-1" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjfJ-HovwBeHRRa4sYtis-8GwcuHH8PUEPhAFCckNl_orYvkWup0JgVhwD88xEb1aTRkwEEjjrKwmim3eyIpMESo7qOezDkpZhgCxxTIy1SXOZV6dWVKn8AOSXQKpH9y76GZgxEePzTY-DMNEZZoRzHahDskK4Q3Jl99ToJNoHlZ3XB_dYXTijSDoPqXZkB1YqhN68YVnHjuxy0SEO_tkZ3OYmwlu3c6cg70d1VtzY6xNUTp4hL03ZjwLFHWErXmoDMBWRnkvBz4Q'); width:50%;"></div><div class="absolute top-0 bottom-0 w-1 bg-white/50 left-1/2 -translate-x-1/2 flex items-center justify-center cursor-ew-resize slider-handle" id="handle-1"><div class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center shadow-lg"><span class="material-symbols-outlined">unfold_more</span></div></div></div><div class="p-6 flex justify-between items-center"><div><h4 class="font-subheading-lg text-subheading-lg text-white">MARCUS R.</h4><p class="font-body-md text-on-surface-variant">12 Month Hypertrophy Program</p></div><div class="text-right"><span class="font-headline-md text-headline-md text-tertiary-container">+15KG</span><p class="font-label-caps text-label-caps">LEAN MUSCLE</p></div></div></div>
+                    <div class="glass-card p-1 rounded-xl group"><div class="relative aspect-[4/3] overflow-hidden rounded-lg bg-black"><div class="absolute inset-0 bg-cover bg-center" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuA25rzXhph4-6EaYTCxWFvmcrAjwHezuLtQdImgvK39Tq2OQdwaxTgq-e4NfxafIBueibaLE9AV5-jl4fCF-Lplp1jl2Ly4pcfQTzg7WVJ1tlPW16BO0_oAgqF5mSpnZiJ1WfQIifQNu0mhZl9WzKTs5Tv2Ovrm8wf7Vek8Vsl-Lyz7ggLBbCnwAbvw_ofNRm79dz_ShKvwDHuTdmaBc7O-lUWHkmOujGuWJzCIqce4PtJrFMFAfJs0ian0i0aqvRHDG-e_V91Lu_o')"></div><div class="absolute inset-0 bg-cover bg-center border-r-2 border-white/30" id="before-mask-2" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDaR4YTzX85hQqTSFz7BF_5HIks4vKTnXHWAiszgZcMF7eCpvczAi3Lp-n_5BJy5jDOevvGaOyoSg04X1rWwz9kcHoZcFC2nYNw0fWp2tW-AzV0brDioDYn1M8cPh3bTVdSGMknSrPzaPVrwLdMWzPHVawk0_3EEH8aOpGLgBg5dx1jNIDA8R3Exg_GjMODPL7881DEFLYgyXvW7XuckHRqsGNRgfSpCG9jtQBrpRBfrDIYH03XIKdZw8EYX2vHhNgOsZ09OWTGSbg'); width:50%;"></div><div class="absolute top-0 bottom-0 w-1 bg-white/50 left-1/2 -translate-x-1/2 flex items-center justify-center cursor-ew-resize slider-handle" id="handle-2"><div class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center shadow-lg"><span class="material-symbols-outlined">unfold_more</span></div></div></div><div class="p-6 flex justify-between items-center"><div><h4 class="font-subheading-lg text-subheading-lg text-white">SARAH J.</h4><p class="font-body-md text-on-surface-variant">24-Week Sculpt &amp; Tone</p></div><div class="text-right"><span class="font-headline-md text-headline-md text-tertiary-container">-18%</span><p class="font-label-caps text-label-caps">BODY FAT</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Cards -->
+        <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <h2 class="font-headline-lg text-headline-lg text-white mb-stack-md">MOMENTUM IN MOTION</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative rounded-xl overflow-hidden aspect-video glass-card"><div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBczjeeJLSpQEoRYGgQb7hFvqnDl3og-tgpV4wPHU4jf6HVMNRKnzEb1FS_quEDk4rR9WgogHzI3WncunIiIqNnjb_LusOym9AXh1GTtXOhMbnteKs4rJlq_Dold1xaJjzkgjxPrNcVTFv8x_oiG-VCF-qbjTHZ7QGDp_i9oOGQVi-AcU-lNNeMUiImM1Fvs6t1esZLLvMeqgtwZR7zmC_o8kzCXV0_kK7Umb4i33jrUncZuMInJRH1-NqKNYoZEK8l46AqEr055Tk')"></div><div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-colors"><div class="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center group-hover:scale-110 transition-transform bg-white/10 backdrop-blur-md"><span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings:'FILL'1;">play_arrow</span></div></div><div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"><p class="font-label-caps text-label-caps text-white">THE HEAVY SESSIONS: EP. 04</p></div></div>
+                <div class="group relative rounded-xl overflow-hidden aspect-video glass-card"><div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrSi8WQo-ALDqGimFwKNlRPcIeGN0kSnzEdEsNgyDS6SDkzsNBNWKfIpGy6JQqUHeUeaGYuJM_ywBJZUUygupNQu1ZFNB8Ls4vI46-STG0apxZu7oClburnhtu8OcLdGOHFHAhCpPU0pAYTz5iAA_6SvDBSpZ-PNNFrH4hmR6ObxC3KlndZPI4xXgYU56ixCk-buv1KyfAIc7AkUDhEY8cntB1VbTjCUiGATR3bQ5ksTKceDPTNbXaBOS3fDPoV0W0WiBZ_n0yFGc')"></div><div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-colors"><div class="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center group-hover:scale-110 transition-transform bg-white/10 backdrop-blur-md"><span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings:'FILL'1;">play_arrow</span></div></div><div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"><p class="font-label-caps text-label-caps text-white">CULTURE &amp; COMMUNITY</p></div></div>
+                <div class="group relative rounded-xl overflow-hidden aspect-video glass-card"><div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCS6fq8wFSaelKgefuTEOgNFEwFKbJlKdPakurYuD4O6wX09-sIfdRusI7kMlOrisfot7hSCau81qaPIYIurckC5m7hAhCoKaXBDxvGAT2vsYuH-BNbxEPC_uJWtBISDrkU3jt6iGErKJjsPsASjGfmwW6c-fJ_XfL3qy9dTJ_FD1UB8jxNSUZK7bS6U1qlFZaJsTQRuIRU3WxkIoA9PF4rKaSS_Buxe3PaJWKgoss5ITuVsEpn2ZZRDNfELoc1MvTY8xgleoMaVxg')"></div><div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-colors"><div class="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center group-hover:scale-110 transition-transform bg-white/10 backdrop-blur-md"><span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings:'FILL'1;">play_arrow</span></div></div><div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"><p class="font-label-caps text-label-caps text-white">TOUR THE SANCTUARY</p></div></div>
+            </div>
+        </section>
+
+        <!-- Instagram Feed -->
+        <section class="py-stack-lg border-t border-white/5">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="text-center mb-stack-md"><h2 class="font-headline-md text-headline-md text-white">JOIN THE INNER CIRCLE</h2><p class="font-label-caps text-label-caps text-tertiary-container mt-2">#ELITESTRENGTH</p></div>
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-2">
+                    <div class="aspect-square bg-cover bg-center hover:opacity-80 transition-opacity cursor-pointer" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtQ9ErZSGzwLq_nWFi_uQPxUpWbR5KLnI1KPm6Cum5drcYzqbAHOFA6cMuEP6BQgTWlvG6wAi5ABwlmq3CqfTN0Vf18vyIZTuxCFqn5tgjfI2wIpDb5UxPEHDHw2AZFfspeNyFQ1OsKXwzzsNLAlg-ukOfp0X0pifqvzye3MjBywlM-icCe4lMS8F1gfI__PC-fkzTPMftx2eBzEBjhVOwbLK0ZI2MWsgssAlCSHfhyDbeCqgXOrZUsFrQ4ibK7vDOXXw4BqKff18')"></div>
+                    <div class="aspect-square bg-cover bg-center hover:opacity-80 transition-opacity cursor-pointer" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCw9WxIa_OUFngMOporOw-NxnFOlfxdItqBV1P8xJgm8dOWJ12MWEc84gynXXahttOHeKrm9xfqHYO5In-S7bqEJccfyg3p0m72tt9Cm0RAdxFL1IzUPGReurr5bRlQzbrWWtDxl4XHy1rxDskMMZp-qdstAKUALF3f02nPLrJ-j5HRT4CJLDuAnQz59bkupD-MpPlfDQ4jjr6I2d27ZpeAS1yitdgEMZmF19WsjLpCEFPe8aZVIPtesq77VzcNK9W_4lZ_ymzROTw')"></div>
+                    <div class="aspect-square bg-cover bg-center hover:opacity-80 transition-opacity cursor-pointer" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYoKbNU0V15eHpT9hh3ZcuTYeuiOvdaR6uS-aCqpMvC6KoS7yea8WikXw-US-LMp5KwFiJVgzLF4mShkRKzqJkH5LtMd1uO5Bk3KXfeIGbnMJt7nxz1XVcZUU8khlvL7OH42bShDx-JaWDB-DdB6xL0c0H4FYcTiPYCtZbRgiVQjPOp7uUbAlCbRU52wVBuLvyBZPQmkTnqgCMgb5-JeFwa-Jkhr3Ska9_qlvrrbZDxoHSvoeqZDxdxijzTfxeOk-0kcoq9SQVG5Q')"></div>
+                    <div class="aspect-square bg-cover bg-center hover:opacity-80 transition-opacity cursor-pointer" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBghkRAqNCtHX8pUl5TR13tQOTy5pbElOJHhWzk7ZQisicQkenl5AqouCAMrBjfTCx2KrOP30_JvZdsEl9eJWhgyo8Ut5p6aYJb7C1PeSZe1Rcd5ZbfoQ3fF4slI50r_MxYPlP0Na-pP5iy5Oa2D5uYVcAmRSFZT8RUyvaR6o-K9Tc2rbpMb5XdXQdX4DIfk-tUJC6qcyZnWpdhCijRi-KfX5MIkFKcZM_RSH4NDlZ4PSdNyfZN9dHQpAtGSVeBOSMXYLPi1Eh1P1U')"></div>
+                    <div class="aspect-square bg-cover bg-center hover:opacity-80 transition-opacity cursor-pointer" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLsab5hSz-ZdDllrA5knf257YxS29uvu27bYcJKLeTZzBsplRq5FC9Vl5uSnP3_3kL1WBMyJB_mJmNZeKf1m7xXKB3MqHvnNthXcGBk3SqLnJqdYow_zIAOEVdUKHfCaaugdhnCgCmIKb1KzpZDq1MX8GJTmtDU9_v4HnhUFi6UkntYgjodPzCCTX7DgXsSpud8MgRm0EcaFAaXm2gddCahHxP1b-BNTMAkdOsYiHqKn20H9Tb8RW4twhmMbLMcozRJZ5IpUwyVOU')"></div>
+                    <div class="aspect-square bg-cover bg-center hover:opacity-80 transition-opacity cursor-pointer" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDItcTYO4wj_sJPSjBPO5sLAknHOJ3f4uHIHZrN7mJglgF0oj-_IFNKYTcL0dd42Q0eZKK4kl7_ZGe8fc4fuTsS_4sgKuYfinUN4na7thMaKOTpQf3dsucxn0KNoa4vcOw4Rs6dNt1EkcDDSE1WiOhemnPG02ZXzAIg1dL3vRglpbZnK0xKoFyVGEsEtIlKkiQ1XD36mvv1bKfBrTzlR4cHMBts6Yt2Q74SqbpUHygxJc0k0gHllAWuEym0VBnRsNH-PWPyO2M8ouU')"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-32 relative overflow-hidden">
+            <div class="absolute inset-0 bg-tertiary-container/10"></div>
+            <div class="relative z-10 px-margin-mobile text-center"><h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-8">START YOUR OWN STORY</h2><p class="font-subheading-lg text-subheading-lg text-on-surface-variant max-w-xl mx-auto mb-12">The next great transformation begins the moment you decide. Are you ready for momentum?</p><button class="crimson-gradient px-12 py-5 rounded-none font-label-caps text-label-caps text-white crimson-glow transition-all active:scale-95 text-lg" onclick="navigateTo('contact')">CLAIM YOUR EVALUATION</button></div>
+        </section>
+    </div>
+
+    <!-- ========== PAGE: BLOG ========== -->
+    <div id="page-blog" class="page-section pt-24">
+        <!-- Hero -->
+        <section class="relative h-[614px] flex items-center justify-center overflow-hidden mb-stack-lg">
+            <div class="relative z-10 text-center px-margin-mobile"><span class="font-label-caps text-label-caps text-tertiary-container block mb-4 tracking-widest">EST. MMXXIV</span><h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 tracking-tight">ELITE JOURNAL</h1><p class="font-body-lg text-body-lg text-on-secondary-container max-w-2xl mx-auto">The science of peak performance. Unfiltered insights from the world's leading strength athletes and sports scientists.</p></div>
+        </section>
+
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-stack-lg pb-stack-lg">
+            <!-- Featured -->
+            <section><div class="glass-card rounded-xl overflow-hidden group cursor-pointer transition-all duration-500 hover:-translate-y-2 hover-glow flex flex-col md:flex-row"><div class="md:w-3/5 h-96 md:h-auto overflow-hidden relative"><div class="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent z-10 md:block hidden"></div><img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGX32NDiT5s4SwPE_8-3R-UdyzbPDhFqw8jT9KzRDrZ8ywR-9eac_3iJPrfCn0tfMtPuuHmoP5Kl4YiifqsoP6k7SsM2kQ3ZzX7CKws1yW5t0NVGEf0LghiunUNDjVH9jRs7EBP1zzHFZ4DUSr-csA6ww_CVQ--Tk8nrswRPpYbA_S-Y9WwWumvwosZyaKPhpzn3gNHmgFm1ZQtN-hxTFtQdUbwH0wHZP1ax1iZSSSHYeoei-H8aHwaedrREOvX08RCudmE8EKevs" /></div><div class="md:w-2/5 p-12 flex flex-col justify-center bg-surface-container"><span class="font-label-caps text-label-caps text-tertiary-container mb-6 inline-block">FEATURED • SCIENCE</span><h2 class="font-headline-lg text-headline-lg text-white mb-6 group-hover:text-tertiary-container transition-colors">THE SCIENCE OF HYPERTROPHY: DECODING GROWTH</h2><p class="font-body-md text-body-md text-on-secondary-container mb-8 line-clamp-3">Understand the molecular pathways triggered by mechanical tension, metabolic stress, and muscle damage. We dive deep into the latest research to optimize your gains.</p><div class="flex items-center gap-4"><button class="flex items-center gap-2 font-label-caps text-label-caps text-white group/btn">READ ARTICLE <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-2">arrow_forward</span></button></div></div></div></section>
+
+            <!-- Latest + Sidebar -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <div class="lg:col-span-8 space-y-stack-md">
+                    <div class="flex items-center justify-between mb-8"><h3 class="font-headline-md text-headline-md text-white uppercase">LATEST INTEL</h3><div class="flex gap-4 overflow-x-auto pb-2 no-scrollbar"><span class="font-label-caps text-label-caps px-4 py-2 bg-tertiary-container text-white rounded-full cursor-pointer">ALL</span><span class="font-label-caps text-label-caps px-4 py-2 bg-surface-container text-on-secondary-container rounded-full hover:bg-surface-variant transition-colors cursor-pointer">NUTRITION</span><span class="font-label-caps text-label-caps px-4 py-2 bg-surface-container text-on-secondary-container rounded-full hover:bg-surface-variant transition-colors cursor-pointer">WORKOUTS</span><span class="font-label-caps text-label-caps px-4 py-2 bg-surface-container text-on-secondary-container rounded-full hover:bg-surface-variant transition-colors cursor-pointer">RECOVERY</span></div></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+                        <article class="glass-card rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 hover:-translate-y-2 hover-glow"><div class="h-64 overflow-hidden"><img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaVKKx_fZlziLWCHaGIKx-ajhbp-9mhEGGaOjkzJZusYeXKjjp2onj9KFm-u4lLhLfJm9bcxBTXSLl37dtMnF-uMA8RiitdnuSS3chAMlmBeAnTZlqJrDLOc6NDKf9tMcgOubslD34ArGoDIbVS-i-I3NZp7KsIDsyAJ90sEq4WbzK1om1zvUmGzDByKs09HY0jw-DBKx4QoCaanhKBb-VxL-XRiJpM0lF0Q8rO5VifPgsHFMkxoQkDtycCPd-QuqKQf-SgDxuKdQ" /></div><div class="p-8"><div class="flex justify-between items-center mb-4"><span class="font-label-caps text-label-caps text-tertiary-container">NUTRITION</span><span class="font-label-caps text-[10px] text-on-secondary-container">5 MIN READ</span></div><h4 class="font-subheading-lg text-subheading-lg text-white mb-4 group-hover:text-tertiary-container transition-colors">OPTIMAL MACRO RATIOS FOR ELITE RECOVERY</h4><p class="font-body-md text-body-md text-on-secondary-container line-clamp-2">Why the standard 40/40/20 split might be holding back your systemic recovery and CNS repair.</p></div></article>
+                        <article class="glass-card rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 hover:-translate-y-2 hover-glow"><div class="h-64 overflow-hidden"><img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT9LwBjMTIHLBzfucdog-l-YSVeBmxZIYvePICQ0_7lp0qeZN1SUar3Zw6ldZ2aUNH0WzCxw4O6UobNjKdYJIqTHiLI9Znf8IEPQ66fwFcAd-I7ujAC3DAHg1ZEZOo1eIh4fxsZSTc-rDnKyDlWh1ZqtqeirZPCAhPdXHGauFwukeTvmH3FY5SdJE9CM01NLPDMREnsnXJ9K5Feh6WR_NxJ0-OcyRZY8SQv0UkhSQAqB_qPHwIRCMLnvQwpqB9fKpR4N_tugAShkc" /></div><div class="p-8"><div class="flex justify-between items-center mb-4"><span class="font-label-caps text-label-caps text-tertiary-container">MUSCLE GAIN</span><span class="font-label-caps text-[10px] text-on-secondary-container">8 MIN READ</span></div><h4 class="font-subheading-lg text-subheading-lg text-white mb-4 group-hover:text-tertiary-container transition-colors">THE PROGRESSIVE OVERLOAD TRAP</h4><p class="font-body-md text-body-md text-on-secondary-container line-clamp-2">How to identify when 'adding more weight' is actually causing long-term joint degradation.</p></div></article>
+                        <article class="glass-card rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 hover:-translate-y-2 hover-glow"><div class="h-64 overflow-hidden"><img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAqL3VIuzJ-vi0uRhiQXGEAvWPXoYus_a88XDjHczJkaBZ80AvUw5UArOR5QCXW4sOhOKQMFGkl9dHCVy-u7Pi91yUsN___Hl7ondyO8JBXmcO4T1VbYYyjnU75e2FKb5RjfxhHa0mLB3SZ8F8PqVF14xhINERGwRA-ywDw74BEy176RcmJVKUPSmf5Od0qtUU0EFLejWoKMOS4hdrvnK2Lc08Q2M8c4cvdbSUphSD4aJNufK9atxDHw6ZNproH4qy4bYLgA8M_6o" /></div><div class="p-8"><div class="flex justify-between items-center mb-4"><span class="font-label-caps text-label-caps text-tertiary-container">LIFESTYLE</span><span class="font-label-caps text-[10px] text-on-secondary-container">6 MIN READ</span></div><h4 class="font-subheading-lg text-subheading-lg text-white mb-4 group-hover:text-tertiary-container transition-colors">DESIGNING YOUR ELITE HOME ENVIRONMENT</h4><p class="font-body-md text-body-md text-on-secondary-container line-clamp-2">Your physical surroundings dictate your discipline. Here is how to engineer your home for success.</p></div></article>
+                        <article class="glass-card rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 hover:-translate-y-2 hover-glow"><div class="h-64 overflow-hidden"><img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmBU42wnQogaQjtrv-7SJlN98McoB66b_O9QQnI56x7NVFGPDDanJ31K8mo6mnsLZacVLLqwEGWvItJjMDcT3scd7WPZunaSc_qYkbzi9mB11L-ej2oyPscFiOOizycX1b5HGdOOx-8LxUNts9lnE8AYQgiDRv_4ri2ejiOkYbjz14saCr85LJ4FxywemJ4kFpS2mB8UufR_VrhRM4-RiMwR589csjP2KX5Kts8hSzpuKhahuE9LgLDATUfyhvUHsOptmd6CAetBQ" /></div><div class="p-8"><div class="flex justify-between items-center mb-4"><span class="font-label-caps text-label-caps text-tertiary-container">RECOVERY</span><span class="font-label-caps text-[10px] text-on-secondary-container">12 MIN READ</span></div><h4 class="font-subheading-lg text-subheading-lg text-white mb-4 group-hover:text-tertiary-container transition-colors">NEURO-RECOVERY PROTOCOLS</h4><p class="font-body-md text-body-md text-on-secondary-container line-clamp-2">Beyond the foam roller: how to stimulate the parasympathetic nervous system for instant growth.</p></div></article>
+                    </div>
+                </div>
+                <aside class="lg:col-span-4 space-y-gutter">
+                    <div class="glass-card p-8 rounded-xl"><h5 class="font-label-caps text-label-caps text-white mb-6 uppercase">SEARCH JOURNAL</h5><div class="relative"><input class="w-full bg-surface-container-lowest border border-white/10 rounded-lg py-4 px-12 focus:border-tertiary-container focus:ring-0 transition-all font-body-md text-on-surface" placeholder="Search topics..." type="text" /><span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-secondary-container">search</span></div></div>
+                    <div class="crimson-gradient p-1 rounded-xl shadow-2xl"><div class="bg-surface-container-lowest rounded-[calc(0.75rem-1px)] p-8"><h5 class="font-headline-md text-headline-md text-white mb-4">JOIN THE ELITE</h5><p class="font-body-md text-body-md text-on-secondary-container mb-6">Receive exclusive weekly research summaries directly from our training lab.</p><form class="space-y-4" onsubmit="event.preventDefault();alert('Subscribed!');"><input class="w-full bg-surface-container border border-white/5 rounded-lg py-3 px-4 focus:border-tertiary-container focus:ring-0 transition-all font-body-md" placeholder="Your Email" type="email" /><button class="w-full crimson-gradient py-4 rounded-lg font-label-caps text-label-caps text-white hover:scale-[1.02] transition-transform">SUBSCRIBE</button></form><p class="text-[10px] text-on-secondary-fixed-variant mt-4 text-center">Unsubscribe anytime. Your data is secure.</p></div></div>
+                    <div class="glass-card p-8 rounded-xl"><h5 class="font-label-caps text-label-caps text-white mb-8 uppercase tracking-widest">TRENDING NOW</h5><div class="space-y-8"><div class="flex gap-4 group cursor-pointer"><span class="font-display-lg text-headline-lg text-tertiary-container/30 group-hover:text-tertiary-container transition-colors">01</span><div><h6 class="font-subheading-sm text-subheading-sm text-white mb-1 group-hover:text-tertiary-container transition-colors">Sleep &amp; Testosterone Optimization</h6><span class="font-label-caps text-[10px] text-on-secondary-container uppercase">Performance</span></div></div><div class="flex gap-4 group cursor-pointer"><span class="font-display-lg text-headline-lg text-tertiary-container/30 group-hover:text-tertiary-container transition-colors">02</span><div><h6 class="font-subheading-sm text-subheading-sm text-white mb-1 group-hover:text-tertiary-container transition-colors">The Carnivore Myth vs Reality</h6><span class="font-label-caps text-[10px] text-on-secondary-container uppercase">Nutrition</span></div></div><div class="flex gap-4 group cursor-pointer"><span class="font-display-lg text-headline-lg text-tertiary-container/30 group-hover:text-tertiary-container transition-colors">03</span><div><h6 class="font-subheading-sm text-subheading-sm text-white mb-1 group-hover:text-tertiary-container transition-colors">Mental Fortitude Under Load</h6><span class="font-label-caps text-[10px] text-on-secondary-container uppercase">Mindset</span></div></div></div></div>
+                </aside>
+            </div>
+
+            <div class="text-center pt-8"><button class="bg-surface-container hover:bg-surface-variant border border-white/10 px-12 py-5 rounded-full font-label-caps text-label-caps text-white transition-all hover:scale-105 active:scale-95">LOAD MORE INTELLIGENCE</button></div>
+        </div>
+    </div>
+
+    <!-- ========== PAGE: CONTACT ========== -->
+    <div id="page-contact" class="page-section pt-24">
+        <!-- Hero -->
+        <section class="px-margin-mobile md:px-margin-desktop mb-stack-lg relative pt-12">
+            <div class="max-w-container-max mx-auto text-center relative z-10"><span class="font-label-caps text-tertiary-container mb-4 block tracking-[0.3em]">YOUR TRANSFORMATION AWAITS</span><h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 uppercase">Ready to Start?</h1><p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Take the first step toward elite performance. Book your personalized trial session and experience the new standard of fitness.</p></div>
+        </section>
+
+        <!-- Booking Grid -->
+        <section class="px-margin-mobile md:px-margin-desktop mb-stack-lg">
+            <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <div class="lg:col-span-7 glass-card p-10 rounded-3xl" id="booking-container">
+                    <div class="flex items-center justify-between mb-8"><h2 class="font-headline-lg text-on-surface">Book Free Trial</h2><div class="flex gap-2" id="step-indicators"><div class="w-8 h-1 rounded-full bg-tertiary-container transition-all duration-300" data-step="1"></div><div class="w-8 h-1 rounded-full bg-surface-container-highest transition-all duration-300" data-step="2"></div><div class="w-8 h-1 rounded-full bg-surface-container-highest transition-all duration-300" data-step="3"></div></div></div>
+                    <form class="space-y-6" id="trial-form">
+                        <div class="step-content" id="form-step-1"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="space-y-2"><label class="font-label-caps text-on-surface-variant">Full Name</label><input class="glass-input w-full p-4 rounded-xl text-on-surface font-subheading-sm" placeholder="John Doe" type="text" /></div><div class="space-y-2"><label class="font-label-caps text-on-surface-variant">Email Address</label><input class="glass-input w-full p-4 rounded-xl text-on-surface font-subheading-sm" placeholder="john@example.com" type="email" /></div></div></div>
+                        <div class="step-content hidden" id="form-step-2"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="space-y-2"><label class="font-label-caps text-on-surface-variant">Preferred Trainer</label><select class="glass-input w-full p-4 rounded-xl text-on-surface font-subheading-sm appearance-none"><option>No Preference</option><option>Marcus Vane (Elite Strength)</option><option>Sarah Thorne (Performance Yoga)</option><option>Leo Grant (Metabolic Conditioning)</option></select></div><div class="space-y-2"><label class="font-label-caps text-on-surface-variant">Preferred Time</label><select class="glass-input w-full p-4 rounded-xl text-on-surface font-subheading-sm"><option>Early Morning (6 AM - 9 AM)</option><option>Mid-Day (11 AM - 2 PM)</option><option>Evening (5 PM - 8 PM)</option></select></div></div></div>
+                        <div class="step-content hidden" id="form-step-3"><div class="space-y-4"><label class="font-label-caps text-on-surface-variant">Membership Interest</label><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><button class="interest-btn p-4 rounded-xl border border-white/10 hover:border-tertiary-container transition-all text-left group" type="button"><div class="font-subheading-sm text-on-surface">Standard</div><div class="text-[10px] text-on-surface-variant uppercase tracking-widest mt-1">Gym Access</div></button><button class="interest-btn p-4 rounded-xl border border-white/10 hover:border-tertiary-container transition-all text-left" type="button"><div class="font-subheading-sm text-on-surface">Premium</div><div class="text-[10px] text-on-surface-variant uppercase tracking-widest mt-1">Class Access</div></button><button class="interest-btn p-4 rounded-xl border border-white/10 hover:border-tertiary-container transition-all text-left" type="button"><div class="font-subheading-sm text-on-surface">Elite</div><div class="text-[10px] text-on-surface-variant uppercase tracking-widest mt-1">Personal Coaching</div></button></div></div></div>
+                        <div class="flex justify-between items-center pt-6"><button class="hidden font-label-caps text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-2" id="prev-btn" type="button"><span class="material-symbols-outlined text-sm">arrow_back</span> Previous</button><div class="flex-grow"></div><button class="btn-gradient px-12 py-4 rounded-full font-label-caps text-white" id="next-btn" type="button">Next Step</button><button class="hidden btn-gradient px-12 py-4 rounded-full font-label-caps text-white" id="submit-btn" type="submit">Complete Booking</button></div>
+                    </form>
+                </div>
+                <div class="lg:col-span-5 flex flex-col gap-6">
+                    <div class="glass-card p-8 rounded-3xl"><h3 class="font-label-caps text-tertiary-container mb-6">Direct Channels</h3><div class="space-y-6"><div class="flex items-center gap-4 group cursor-pointer"><div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-tertiary-container transition-all"><span class="material-symbols-outlined">call</span></div><div><p class="font-label-caps text-[10px] text-on-surface-variant">Phone</p><p class="font-headline-md text-on-surface text-2xl">+1 (888) ELITE-STR</p></div></div><div class="flex items-center gap-4 group cursor-pointer"><div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-tertiary-container transition-all"><span class="material-symbols-outlined">mail</span></div><div><p class="font-label-caps text-[10px] text-on-surface-variant">Email</p><p class="font-headline-md text-on-surface text-2xl">momentum@elitestrength.com</p></div></div></div></div>
+                    <div class="glass-card p-8 rounded-3xl"><div class="flex justify-between items-center mb-6"><h3 class="font-label-caps text-tertiary-container">Hours of Operation</h3><div class="flex items-center gap-2 px-3 py-1 bg-green-500/10 text-green-500 rounded-full text-[10px] font-label-caps animate-pulse"><div class="w-1.5 h-1.5 rounded-full bg-green-500"></div> OPEN NOW</div></div><div class="space-y-3"><div class="flex justify-between font-subheading-sm"><span class="text-on-surface-variant">Mon — Fri</span><span class="text-on-surface">05:00 — 23:00</span></div><div class="flex justify-between font-subheading-sm"><span class="text-on-surface-variant">Saturday</span><span class="text-on-surface">07:00 — 21:00</span></div><div class="flex justify-between font-subheading-sm"><span class="text-on-surface-variant">Sunday</span><span class="text-on-surface">08:00 — 18:00</span></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section class="px-margin-mobile md:px-margin-desktop mb-stack-lg">
+            <div class="max-w-container-max mx-auto h-[500px] rounded-3xl overflow-hidden relative border border-white/5 group">
+                <div class="w-full h-full grayscale contrast-125 opacity-80 group-hover:scale-105 transition-transform duration-1000 bg-surface-container-highest" style="background:#1a1a1a;"><div class="w-full h-full flex items-center justify-center bg-black/40 backdrop-blur-sm z-10 absolute inset-0"><div class="text-center"><div class="w-20 h-20 rounded-full bg-tertiary-container/20 flex items-center justify-center mx-auto mb-4 border border-tertiary-container/40"><span class="material-symbols-outlined text-tertiary-container text-4xl">location_on</span></div><h3 class="font-headline-lg text-white">THE FLAGSHIP</h3><p class="font-label-caps text-on-surface-variant">1200 S Figueroa St, Los Angeles, CA 90015</p></div></div></div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="px-margin-mobile md:px-margin-desktop mb-stack-lg">
+            <div class="max-w-container-max mx-auto"><div class="mb-stack-md text-center"><h2 class="font-headline-lg text-on-surface mb-2">Startup FAQ</h2><p class="font-label-caps text-on-surface-variant">Everything you need to know before your first session</p></div><div class="grid grid-cols-1 md:grid-cols-2 gap-stack-sm"><div class="glass-card p-6 rounded-2xl group hover:border-tertiary-container transition-all"><h4 class="font-subheading-lg text-on-surface mb-2 flex items-center justify-between">What should I bring?<span class="material-symbols-outlined text-on-surface-variant group-hover:rotate-45 transition-transform">add</span></h4><p class="text-on-surface-variant font-body-md">Bring athletic wear, clean training shoes, and a water bottle. We provide premium towels and showers.</p></div><div class="glass-card p-6 rounded-2xl group hover:border-tertiary-container transition-all"><h4 class="font-subheading-lg text-on-surface mb-2 flex items-center justify-between">Membership levels?<span class="material-symbols-outlined text-on-surface-variant group-hover:rotate-45 transition-transform">add</span></h4><p class="text-on-surface-variant font-body-md">We offer three tiers: Core, Performance, and Elite. Each tailored to different intensity and support needs.</p></div><div class="glass-card p-6 rounded-2xl group hover:border-tertiary-container transition-all"><h4 class="font-subheading-lg text-on-surface mb-2 flex items-center justify-between">Can I cancel anytime?<span class="material-symbols-outlined text-on-surface-variant group-hover:rotate-45 transition-transform">add</span></h4><p class="text-on-surface-variant font-body-md">Yes, our monthly flexible plans allow for easy cancellation with a 30-day notice period.</p></div><div class="glass-card p-6 rounded-2xl group hover:border-tertiary-container transition-all"><h4 class="font-subheading-lg text-on-surface mb-2 flex items-center justify-between">Is personal training included?<span class="material-symbols-outlined text-on-surface-variant group-hover:rotate-45 transition-transform">add</span></h4><p class="text-on-surface-variant font-body-md">The Elite tier includes 4 personal sessions per month. Sessions can also be booked à la carte.</p></div></div></div>
+        </section>
+
+        <!-- Emergency -->
+        <section class="bg-surface-container-lowest border-t border-white/5 py-12"><div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-container" style="font-variation-settings:'FILL'1;">emergency_home</span><span class="font-label-caps text-on-surface-variant tracking-widest">Emergency Assistance</span></div><div class="flex flex-wrap justify-center gap-8 font-label-caps text-[10px]"><div class="text-center md:text-left"><p class="text-tertiary-container">MEDICAL TEAM</p><p class="text-on-surface">+1 (800) 911-ELITE</p></div><div class="text-center md:text-left"><p class="text-tertiary-container">FACILITY MANAGER</p><p class="text-on-surface">fm-desk@elitestrength.com</p></div></div></div></section>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-surface-container-lowest border-t border-white/5 relative w-full">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+            <div class="col-span-1 md:col-span-1">
+                <div class="font-display-lg text-headline-md text-on-surface mb-6 cursor-pointer" onclick="navigateTo('home')">ELITE STRENGTH</div>
+                <p class="font-body-md text-body-md text-on-secondary-container max-w-xs">Precision-engineered performance for those who demand more from themselves. Built for momentum. Designed for dominance.</p>
+                <div class="flex gap-4 mt-6">
+                    <a class="w-10 h-10 glass-card flex items-center justify-center hover:text-tertiary-container transition-colors rounded-full" href="#"><span class="material-symbols-outlined">public</span></a>
+                    <a class="w-10 h-10 glass-card flex items-center justify-center hover:text-tertiary-container transition-colors rounded-full" href="#"><span class="material-symbols-outlined">videocam</span></a>
+                    <a class="w-10 h-10 glass-card flex items-center justify-center hover:text-tertiary-container transition-colors rounded-full" href="#"><span class="material-symbols-outlined">share</span></a>
+                </div>
+            </div>
+            <div><h4 class="font-headline-md text-headline-md text-tertiary-container mb-6 uppercase">EXPLORE</h4><ul class="space-y-4 font-body-md text-on-secondary-container"><li><span class="hover:text-tertiary-container transition-colors cursor-pointer" onclick="navigateTo('programs')">Programs</span></li><li><span class="hover:text-tertiary-container transition-colors cursor-pointer" onclick="navigateTo('trainers')">The Roster</span></li><li><span class="hover:text-tertiary-container transition-colors cursor-pointer" onclick="navigateTo('gallery')">Transformations</span></li><li><span class="hover:text-tertiary-container transition-colors cursor-pointer" onclick="navigateTo('blog')">Elite Journal</span></li></ul></div>
+            <div><h4 class="font-headline-md text-headline-md text-tertiary-container mb-6 uppercase">SUPPORT</h4><ul class="space-y-4 font-body-md text-on-secondary-container"><li><a class="hover:text-tertiary-container transition-colors cursor-pointer" href="#">FAQ</a></li><li><a class="hover:text-tertiary-container transition-colors cursor-pointer" href="#">Privacy Policy</a></li><li><a class="hover:text-tertiary-container transition-colors cursor-pointer" href="#">Terms of Service</a></li><li><a class="hover:text-tertiary-container transition-colors cursor-pointer" href="#">Cookie Policy</a></li></ul></div>
+            <div><h4 class="font-headline-md text-headline-md text-tertiary-container mb-6 uppercase">NEWSLETTER</h4><p class="font-body-md text-body-md text-on-secondary-container mb-4">Get training tips and exclusive offers.</p><div class="flex border-b border-white/20 pb-2"><input class="bg-transparent border-none text-on-surface placeholder:text-surface-variant font-label-caps w-full focus:ring-0" placeholder="EMAIL" type="email" /><button class="text-tertiary-container hover:translate-x-1 transition-transform" onclick="alert('Subscribed!')"><span class="material-symbols-outlined">arrow_forward</span></button></div></div>
+        </div>
+        <div class="px-margin-mobile md:px-margin-desktop py-8 border-t border-white/5 text-center"><p class="font-label-caps text-[10px] text-surface-variant tracking-[0.2em] uppercase">© 2024 ELITE STRENGTH. BUILT FOR MOMENTUM.</p></div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script>
+        // ===== NAVIGATION =====
+        function navigateTo(page) {
+            document.querySelectorAll('.page-section').forEach(el => el.classList.remove('active'));
+            const target = document.getElementById('page-' + page);
+            if (target) target.classList.add('active');
+
+            document.querySelectorAll('.nav-link').forEach(el => {
+                el.classList.remove('active-nav');
+                if (el.dataset.page === page) el.classList.add('active-nav');
+            });
+            document.querySelectorAll('.mobile-nav-link').forEach(el => {
+                el.classList.remove('active-mobile');
+                if (el.dataset.page === page) el.classList.add('active-mobile');
+            });
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (document.getElementById('mobile-menu')) {
+                document.getElementById('mobile-menu').classList.remove('open');
+            }
+        }
+
+        // Set default active nav
+        document.querySelector('.nav-link[data-page="home"]')?.classList.add('active-nav');
+        document.querySelector('.mobile-nav-link[data-page="home"]')?.classList.add('active-mobile');
+
+        // ===== MOBILE MENU =====
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        }
+
+        // ===== SCROLL REVEAL =====
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+        document.querySelectorAll('.scroll-reveal').forEach(el => revealObserver.observe(el));
+
+        // ===== COUNTERS =====
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.dataset.target);
+                    if (isNaN(target)) return;
+                    let current = 0;
+                    const step = Math.max(1, Math.floor(target / 60));
+                    const interval = setInterval(() => {
+                        current += step;
+                        if (current >= target) { el.textContent = target;
+                            clearInterval(interval); } else el.textContent = current;
+                    }, 20);
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+        // ===== BMI CALCULATOR =====
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById('bmi-weight').value);
+            const height = parseFloat(document.getElementById('bmi-height').value);
+            const resultDiv = document.getElementById('bmi-result');
+            const valueSpan = document.getElementById('bmi-value');
+            const statusSpan = document.getElementById('bmi-status');
+
+            if (!weight || !height || height <= 0) { alert('Please enter valid weight and height.'); return; }
+
+            const bmi = weight / ((height / 100) ** 2);
+            valueSpan.textContent = bmi.toFixed(1);
+
+            let status = '';
+            if (bmi < 18.5) status = 'UNDERWEIGHT';
+            else if (bmi < 25) status = 'HEALTHY WEIGHT';
+            else if (bmi < 30) status = 'OVERWEIGHT';
+            else status = 'OBESE';
+
+            statusSpan.textContent = 'STATUS: ' + status;
+            resultDiv.classList.remove('hidden');
+        }
+
+        // ===== TRANSFORMATION SLIDER (HOME) =====
+        (function initHomeSlider() {
+            const handle = document.getElementById('slider-handle-home');
+            const before = document.getElementById('before-image-home');
+            if (!handle || !before) return;
+            let dragging = false;
+            const container = handle.parentElement;
+
+            const move = (e) => {
+                if (!dragging) return;
+                const rect = container.getBoundingClientRect();
+                let x = (e.clientX || (e.touches && e.touches[0].clientX)) - rect.left;
+                x = Math.max(0, Math.min(x, rect.width));
+                const pct = (x / rect.width) * 100;
+                handle.style.left = pct + '%';
+                before.style.width = pct + '%';
+            };
+
+            handle.addEventListener('mousedown', () => dragging = true);
+            handle.addEventListener('touchstart', () => dragging = true);
+            window.addEventListener('mousemove', move);
+            window.addEventListener('touchmove', move);
+            window.addEventListener('mouseup', () => dragging = false);
+            window.addEventListener('touchend', () => dragging = false);
+        })();
+
+        // ===== TRANSFORMATION SLIDERS (GALLERY) =====
+        function initSlider(maskId, handleId) {
+            const mask = document.getElementById(maskId);
+            const handle = document.getElementById(handleId);
+            if (!mask || !handle) return;
+            let dragging = false;
+            const container = mask.parentElement;
+
+            const move = (e) => {
+                if (!dragging) return;
+                const rect = container.getBoundingClientRect();
+                let x = (e.clientX || (e.touches && e.touches[0].clientX)) - rect.left;
+                x = Math.max(0, Math.min(x, rect.width));
+                const pct = (x / rect.width) * 100;
+                mask.style.width = pct + '%';
+                handle.style.left = pct + '%';
+            };
+
+            handle.addEventListener('mousedown', () => dragging = true);
+            handle.addEventListener('touchstart', () => dragging = true);
+            window.addEventListener('mousemove', move);
+            window.addEventListener('touchmove', move);
+            window.addEventListener('mouseup', () => dragging = false);
+            window.addEventListener('touchend', () => dragging = false);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initSlider('before-mask-1', 'handle-1');
+            initSlider('before-mask-2', 'handle-2');
+        });
+
+        // ===== BOOKING FORM MULTI-STEP =====
+        (function initBooking() {
+            let currentStep = 1;
+            const totalSteps = 3;
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            const submitBtn = document.getElementById('submit-btn');
+            const form = document.getElementById('trial-form');
+
+            function updateUI() {
+                document.querySelectorAll('.step-content').forEach((el, i) => {
+                    el.classList.toggle('hidden', i + 1 !== currentStep);
+                });
+                document.querySelectorAll('#step-indicators div').forEach((el, i) => {
+                    if (i + 1 === currentStep) el.className = 'w-8 h-1 rounded-full bg-tertiary-container transition-all duration-300';
+                    else if (i + 1 < currentStep) el.className = 'w-8 h-1 rounded-full bg-on-surface transition-all duration-300';
+                    else el.className = 'w-8 h-1 rounded-full bg-surface-container-highest transition-all duration-300';
+                });
+                prevBtn.classList.toggle('hidden', currentStep === 1);
+                nextBtn.classList.toggle('hidden', currentStep === totalSteps);
+                submitBtn.classList.toggle('hidden', currentStep !== totalSteps);
+            }
+
+            if (nextBtn) nextBtn.addEventListener('click', () => { if (currentStep < totalSteps) { currentStep++;
+                    updateUI(); } });
+            if (prevBtn) prevBtn.addEventListener('click', () => { if (currentStep > 1) { currentStep--;
+                    updateUI(); } });
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const container = document.getElementById('booking-container');
+                    if (container) {
+                        container.innerHTML =
+                            `
+                        <div class="flex flex-col items-center justify-center py-20 text-center">
+                            <div class="w-20 h-20 rounded-full bg-green-500/20 flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-5xl text-green-500">check_circle</span>
+                            </div>
+                            <h2 class="font-headline-lg text-on-surface mb-2">Registration Received</h2>
+                            <p class="font-body-lg text-on-surface-variant max-w-sm">An Elite Performance Advisor will contact you within 2 hours to confirm your trial slot.</p>
+                            <button onclick="window.location.reload()" class="mt-8 font-label-caps text-tertiary-container border-b border-tertiary-container pb-1">Submit another request</button>
+                        </div>
+                        `;
+                    }
+                });
+            }
+
+            // Interest buttons
+            document.querySelectorAll('.interest-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.interest-btn').forEach(b => b.classList.remove(
+                    'active-interest'));
+                    this.classList.add('active-interest');
+                });
+            });
+
+            updateUI();
+        })();
+
+        // ===== HOVER GLASS CARD EFFECT =====
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-4px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // ===== HEADER SCROLL EFFECT =====
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                header.classList.add('py-3');
+                header.classList.remove('py-5');
+            } else {
+                header.classList.add('py-5');
+                header.classList.remove('py-3');
+            }
+        });
+
+        console.log('🏋️ ELITE STRENGTH — Built for Momentum');
+    </script>
+</body>
+</html>
